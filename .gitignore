@@ -1,0 +1,15 @@
+# secrets
+.env
+**/.env
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# macOS
+.DS_Store
+# large / generated files (rebuild them, see the READMEs)
+*.log
+baselines/reinvoke/data/index.json
+baselines/reinvoke/data/index.pkl
+*.bak*

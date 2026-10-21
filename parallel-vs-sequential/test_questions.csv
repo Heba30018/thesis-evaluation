@@ -1,0 +1,41 @@
+Question,Answer
+"Set the ABR type to IBM in OSPF routing configuration for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['router ospf', 'ospf abr-type ibm', 'exit']"
+"Set the ABR type to IBM in OSPF routing configuration for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['router ospf', 'ospf abr-type ibm', 'exit']"
+"Set the ABR type to Cisco in OSPF routing configuration for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['router ospf', 'ospf abr-type cisco', 'exit']"
+"Set the ABR type to standard in OSPF routing configuration for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.","['router ospf', 'ospf abr-type standard', 'exit']"
+"Set up the OSPF refresh timer to 40 seconds within the OSPF configuration mode for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['router ospf', 'refresh timer 40', 'exit']"
+"Set up the OSPF refresh timer to 40 seconds within the OSPF configuration mode for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['router ospf', 'refresh timer 40', 'exit']"
+"Set up the OSPF refresh timer to 60 seconds within the OSPF configuration mode for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['router ospf', 'refresh timer 60', 'exit']"
+"Set up the OSPF refresh timer to 90 seconds within the OSPF configuration mode for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.","['router ospf', 'refresh timer 90', 'exit']"
+"Set the OSPF router ID to 10.1.1.1 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['router ospf', 'ospf router-id 10.1.1.1', 'exit']"
+"Set the OSPF router ID to 192.168.1.1 within the current OSPF configuration for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['router ospf', 'ospf router-id 192.168.1.1', 'exit']"
+"Set the OSPF router ID to 10.2.2.2 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['router ospf', 'ospf router-id 10.2.2.2', 'exit']"
+"Set the OSPF router ID to 10.3.3.3 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.","['router ospf', 'ospf router-id 10.3.3.3', 'exit']"
+"Set the OSPF auto cost reference bandwidth to 1000 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['router ospf', 'auto-cost reference-bandwidth 1000', 'exit']"
+"Set the OSPF auto cost reference bandwidth to 2000 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['router ospf', 'auto-cost reference-bandwidth 2000', 'exit']"
+"Set the OSPF auto cost reference bandwidth to 4000 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['router ospf', 'auto-cost reference-bandwidth 4000', 'exit']"
+"Set the OSPF auto cost reference bandwidth to 5000 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['router ospf', 'auto-cost reference-bandwidth 5000', 'exit']"
+"Set the OSPF auto cost reference bandwidth to 10000 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.","['router ospf', 'auto-cost reference-bandwidth 10000', 'exit']"
+"Configure a default route origination in OSPF with a metric of 30 and apply a route map named route-map-test for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['router ospf', 'default-information originate metric 30 route-map route-map-test', 'exit']"
+"Configure a default route origination in OSPF with a metric of 50 and apply a route map named rm-default for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['router ospf', 'default-information originate metric 50 route-map rm-default', 'exit']"
+"Check the system's CPU usage and the status of the fans for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['show system cpu', 'show platform fanstatus']"
+"Check the system's CPU usage for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.",['show system cpu']
+"Check the system's CPU usage and the status of the fans for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['show system cpu', 'show platform fanstatus']"
+"Reconfigure the switch to use Hosts layer2-layer3 mode for scaling L2 and L3 hosts, then exit the switch-resource configuration for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['switch-resource', 'route-scale hosts layer2-layer3', 'exit']"
+"Set the maximum failed login attempts to 3 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.",['login lockout max-retries 3']
+"Set the maximum failed login attempts to 4 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.",['login lockout max-retries 4']
+"Set the maximum failed login attempts to 3 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.",['login lockout max-retries 3']
+"Set a login session timeout of 900 seconds for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.",['login exec-timeout 900']
+"Set a login session timeout of 600 seconds for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.",['login exec-timeout 600']
+"Set a login session timeout of 1200 seconds for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.",['login exec-timeout 1200']
+"Set a login session timeout of 1800 seconds for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.",['login exec-timeout 1800']
+"Display the DHCP and DHCPv6 relay statistics for Vlan100 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['show ip dhcp-relay statistics Vlan100', 'show ipv6 dhcp-relay statistics Vlan100']"
+"Display the DHCP and DHCPv6 relay statistics for Vlan100 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['show ip dhcp-relay statistics Vlan100', 'show ipv6 dhcp-relay statistics Vlan100']"
+"Display the DHCP and DHCPv6 relay statistics for Vlan100 for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['show ip dhcp-relay statistics Vlan100', 'show ipv6 dhcp-relay statistics Vlan100']"
+"Reconfigure the hash algorithm to JENKINS_HASH_HI and enable symmetric hashing for IPv6 routes for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.","['ip load-share hash algorithm JENKINS_HASH_HI', 'ip load-share hash ipv6 symmetric']"
+"Reconfigure the hash algorithm to JENKINS_HASH_HI and enable symmetric hashing for IPv6 routes for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.","['ip load-share hash algorithm JENKINS_HASH_HI', 'ip load-share hash ipv6 symmetric']"
+"Save the current configuration changes in EXEC mode for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-5'.",['write memory']
+"Save the current configuration changes in EXEC mode for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4'.",['write memory']
+"Enable ECMP in PIM and ensure flows are rebalanced when an interface goes down for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5', 'sonic_4.4.0-6'.","['ip pim ecmp', 'ip pim ecmp rebalance']"
+"Enable ECMP in PIM and ensure flows are rebalanced when an interface goes down for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3'.","['ip pim ecmp', 'ip pim ecmp rebalance']"
+"Enable ECMP in PIM and ensure flows are rebalanced when an interface goes down for these devices 'sonic_4.4.0-2', 'sonic_4.4.0-3', 'sonic_4.4.0-4', 'sonic_4.4.0-5'.","['ip pim ecmp', 'ip pim ecmp rebalance']"

@@ -1,0 +1,5507 @@
+[
+  {
+    "id": "CRUD2-314",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-app-304' on the cluster 'gc-us-west1', with platform 'Cisco IOS', status 'active', and description 'New workload instance'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-app-304",
+          "cluster": "gc-us-west1",
+          "platform": "Cisco IOS",
+          "status": "active",
+          "description": "New workload instance"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-019",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "question": "Show me all device types with a U-height of 12.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?u_height=12.0"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-316",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-cache-403' on the cluster 'gc-europe-west3', with platform 'Ubuntu Linux 18.04', status 'active', and description 'New workload instance'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-cache-403",
+          "cluster": "gc-europe-west3",
+          "platform": "Ubuntu Linux 18.04",
+          "status": "active",
+          "description": "New workload instance"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-318",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-proxy-602' on the cluster 'gc-asia-southeast1', with platform 'Ubuntu Linux 20.04', status 'active', and description 'New proxy VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-proxy-602",
+          "cluster": "gc-asia-southeast1",
+          "platform": "Ubuntu Linux 20.04",
+          "status": "active",
+          "description": "New proxy VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-329",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 121 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/121/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-330",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 60 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/60/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-311",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "task": "Update the virtual machine 'vm20': set its status to 'active' and its description to 'Verified during 2026 capacity review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Verified during 2026 capacity review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-342",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 117 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/117/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-312",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "task": "Update the virtual machine 'vm39': set its status to 'active' and its description to 'Verified during 2026 capacity review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Verified during 2026 capacity review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-120",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Show me all cables, their status is connected and of type 'mmf'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?type=mmf&status=connected"
+      }
+    ]
+  },
+  {
+    "id": "GT2-121",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Show me all cables, their status is planned and of type 'cat5e'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?type=cat5e&status=planned"
+      }
+    ]
+  },
+  {
+    "id": "GT2-122",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Show me all cables, their status is planned and of type 'smf'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?type=smf&status=planned"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-313",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-web-203' on the cluster 'DO-SFO3', with platform 'Ubuntu Linux 18.04', status 'active', and description 'New web frontend VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-web-203",
+          "cluster": "DO-SFO3",
+          "platform": "Ubuntu Linux 18.04",
+          "status": "active",
+          "description": "New web frontend VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-323",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-etl-101' on the cluster 'DO-NYC1', with platform 'Cisco IOS', status 'active', and description 'New ETL pipeline VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-etl-101",
+          "cluster": "DO-NYC1",
+          "platform": "Cisco IOS",
+          "status": "active",
+          "description": "New ETL pipeline VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-321",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-queue-802' on the cluster 'DO-TOR1', with platform 'Ubuntu Linux 20.04', status 'active', and description 'New message queue VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-queue-802",
+          "cluster": "DO-TOR1",
+          "platform": "Ubuntu Linux 20.04",
+          "status": "active",
+          "description": "New message queue VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-023",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Update the circuit '1002841093': set its status to 'offline' and its description to 'Reviewed Q4 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "offline",
+          "description": "Reviewed Q4 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-024",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "task": "Update the circuit 'DJDP9577': set its status to 'active' and its description to 'Reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Reviewed Q1 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-025",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Update the circuit 'LQRT4981': set its status to 'planned' and its description to 'Reviewed Q2 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "planned",
+          "description": "Reviewed Q2 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-026",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "task": "Update the circuit '1002844978': set its status to 'provisioning' and its description to 'Reviewed Q3 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "provisioning",
+          "description": "Reviewed Q3 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-027",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Update the circuit 'KSIR0381': set its status to 'offline' and its description to 'Reviewed Q4 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "offline",
+          "description": "Reviewed Q4 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-030",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "task": "Update the circuit '1002843428': set its status to 'provisioning' and its description to 'Reviewed Q3 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "provisioning",
+          "description": "Reviewed Q3 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-001",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits from the provider 'AT&T'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=AT%26T"
+      }
+    ]
+  },
+  {
+    "id": "GT2-002",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits of type 'MPLS' from the provider 'CenturyLink'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=CenturyLink&type=MPLS"
+      }
+    ]
+  },
+  {
+    "id": "GT2-003",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "question": "Show me all circuits belonging to the tenant 'Pied Piper'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?tenant=Pied%20Piper"
+      }
+    ]
+  },
+  {
+    "id": "GT2-005",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits of type 'Internet Access' from the provider 'Level 3'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=Level%203&type=Internet%20Access"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-001",
+    "category": "circuits.circuit-types",
+    "difficulty": "easy",
+    "task": "Create a new circuit type named 'Wireless Backup' with slug 'wireless-backup' and description 'Point-to-point wireless microwave backup link'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuit-types/",
+        "body": {
+          "name": "Wireless Backup",
+          "slug": "wireless-backup",
+          "description": "Point-to-point wireless microwave backup link"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-002",
+    "category": "circuits.circuit-types",
+    "difficulty": "easy",
+    "task": "Create a new circuit type named 'Leased Line' with slug 'leased-line' and description 'Dedicated leased-line circuit'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuit-types/",
+        "body": {
+          "name": "Leased Line",
+          "slug": "leased-line",
+          "description": "Dedicated leased-line circuit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-003",
+    "category": "circuits.circuit-types",
+    "difficulty": "easy",
+    "task": "Create a new circuit type named 'Broadband Cable' with slug 'broadband-cable' and description 'Best-effort broadband cable circuit for low-priority sites'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuit-types/",
+        "body": {
+          "name": "Broadband Cable",
+          "slug": "broadband-cable",
+          "description": "Best-effort broadband cable circuit for low-priority sites"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-005",
+    "category": "circuits.circuit-types",
+    "difficulty": "easy",
+    "task": "Update the circuit type 'MPLS': set its description to 'Primary offering, confirmed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuit-types/{id}/",
+        "body": {
+          "description": "Primary offering, confirmed Q1 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-008",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Create a new circuit with CID 'NC-2026-0001' from the provider 'AT&T', of type 'Internet Access', with status 'active', a commit rate of 100000 Kbps, and description 'New Internet Access circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0001",
+          "provider": "AT&T",
+          "type": "Internet Access",
+          "status": "active",
+          "commit_rate": 100000,
+          "description": "New Internet Access circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-009",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "task": "Create a new circuit with CID 'NC-2026-0002' from the provider 'CenturyLink', of type 'MPLS', with status 'active', a commit rate of 150000 Kbps, and description 'New MPLS circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0002",
+          "provider": "CenturyLink",
+          "type": "MPLS",
+          "status": "active",
+          "commit_rate": 150000,
+          "description": "New MPLS circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-010",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "task": "Create a new circuit with CID 'NC-2026-0003' from the provider 'Comcast', of type 'Point-to-point', with status 'active', a commit rate of 200000 Kbps, and description 'New Point-to-point circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0003",
+          "provider": "Comcast",
+          "type": "Point-to-point",
+          "status": "active",
+          "commit_rate": 200000,
+          "description": "New Point-to-point circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-012",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "task": "Create a new circuit with CID 'NC-2026-0005' from the provider 'Level 3', of type 'Internet Access', with status 'active', a commit rate of 300000 Kbps, and description 'New Internet Access circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0005",
+          "provider": "Level 3",
+          "type": "Internet Access",
+          "status": "active",
+          "commit_rate": 300000,
+          "description": "New Internet Access circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-013",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "task": "Create a new circuit with CID 'NC-2026-0006' from the provider 'NTT', of type 'MPLS', with status 'active', a commit rate of 350000 Kbps, and description 'New MPLS circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0006",
+          "provider": "NTT",
+          "type": "MPLS",
+          "status": "active",
+          "commit_rate": 350000,
+          "description": "New MPLS circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-014",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Create a new circuit with CID 'NC-2026-0007' from the provider 'Verizon', of type 'Point-to-point', with status 'active', a commit rate of 400000 Kbps, and description 'New Point-to-point circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0007",
+          "provider": "Verizon",
+          "type": "Point-to-point",
+          "status": "active",
+          "commit_rate": 400000,
+          "description": "New Point-to-point circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-016",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "task": "Create a new circuit with CID 'NC-2026-0009' from the provider 'NCSU Facilities', of type 'Internet Access', with status 'active', a commit rate of 500000 Kbps, and description 'New Internet Access circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0009",
+          "provider": "NCSU Facilities",
+          "type": "Internet Access",
+          "status": "active",
+          "commit_rate": 500000,
+          "description": "New Internet Access circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-017",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Create a new circuit with CID 'NC-2026-0010' from the provider 'AT&T', of type 'MPLS', with status 'active', a commit rate of 550000 Kbps, and description 'New MPLS circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0010",
+          "provider": "AT&T",
+          "type": "MPLS",
+          "status": "active",
+          "commit_rate": 550000,
+          "description": "New MPLS circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-019",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "task": "Create a new circuit with CID 'NC-2026-0012' from the provider 'Comcast', of type 'Dark Fiber', with status 'active', a commit rate of 150000 Kbps, and description 'New Dark Fiber circuit for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "NC-2026-0012",
+          "provider": "Comcast",
+          "type": "Dark Fiber",
+          "status": "active",
+          "commit_rate": 150000,
+          "description": "New Dark Fiber circuit for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-021",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Update the circuit '1002843016': set its status to 'planned' and its description to 'Reviewed Q2 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/{id}/",
+        "body": {
+          "status": "planned",
+          "description": "Reviewed Q2 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-008",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits of type 'Dark Fiber' from the provider 'Zayo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=Zayo&type=Dark%20Fiber"
+      }
+    ]
+  },
+  {
+    "id": "GT2-009",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "question": "Show me all circuits belonging to the tenant 'Nakatomi Corportation'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?tenant=Nakatomi%20Corportation"
+      }
+    ]
+  },
+  {
+    "id": "GT2-010",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "List all circuits whose provider is 'AT&T'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=AT%26T"
+      }
+    ]
+  },
+  {
+    "id": "GT2-011",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits of type 'Point-to-point' from the provider 'CenturyLink'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=CenturyLink&type=Point-to-point"
+      }
+    ]
+  },
+  {
+    "id": "GT2-013",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "List all circuits whose provider is 'GTT'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=GTT"
+      }
+    ]
+  },
+  {
+    "id": "GT2-014",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits of type 'MPLS' from the provider 'Level 3'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=Level%203&type=MPLS"
+      }
+    ]
+  },
+  {
+    "id": "GT2-015",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "question": "Show me all circuits belonging to the tenant 'Stark Industries'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?tenant=Stark%20Industries"
+      }
+    ]
+  },
+  {
+    "id": "GT2-016",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "List all circuits whose provider is 'Verizon'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=Verizon"
+      }
+    ]
+  },
+  {
+    "id": "GT2-017",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all circuits of type 'Internet Access' from the provider 'Zayo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider=Zayo&type=Internet%20Access"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-032",
+    "category": "circuits.providers",
+    "difficulty": "medium",
+    "task": "Please delete the provider 'CenturyLink'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/providers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-033",
+    "category": "circuits.providers",
+    "difficulty": "medium",
+    "task": "Please delete the provider 'Comcast'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/providers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-034",
+    "category": "circuits.providers",
+    "difficulty": "medium",
+    "task": "Please delete the provider 'GTT'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/providers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-035",
+    "category": "circuits.providers",
+    "difficulty": "medium",
+    "task": "Please delete the provider 'Level 3'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/providers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-036",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "task": "Update the provider 'NTT': set its description to 'Primary transit provider, contract renewed 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/providers/{id}/",
+        "body": {
+          "description": "Primary transit provider, contract renewed 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-037",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "task": "Update the provider 'Verizon': set its description to 'Primary transit provider, contract renewed 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/providers/{id}/",
+        "body": {
+          "description": "Primary transit provider, contract renewed 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-038",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "task": "Update the provider 'Zayo': set its description to 'Primary transit provider, contract renewed 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/providers/{id}/",
+        "body": {
+          "description": "Primary transit provider, contract renewed 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-040",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "task": "Create a new provider named 'Cogent Communications' with slug 'cogent-communications'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/providers/",
+        "body": {
+          "name": "Cogent Communications",
+          "slug": "cogent-communications"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-041",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "task": "Create a new provider named 'Lumen Technologies' with slug 'lumen-technologies'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/providers/",
+        "body": {
+          "name": "Lumen Technologies",
+          "slug": "lumen-technologies"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-042",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "task": "Create a new provider named 'Windstream' with slug 'windstream'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/providers/",
+        "body": {
+          "name": "Windstream",
+          "slug": "windstream"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-043",
+    "category": "dcim.device-roles",
+    "difficulty": "medium",
+    "task": "Delete the device role 'Distribution Switch'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-roles/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-044",
+    "category": "dcim.device-roles",
+    "difficulty": "medium",
+    "task": "Delete the device role 'Access Switch'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-roles/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-045",
+    "category": "dcim.device-roles",
+    "difficulty": "medium",
+    "task": "Delete the device role 'Database Server'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-roles/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-046",
+    "category": "dcim.device-roles",
+    "difficulty": "medium",
+    "task": "Remove the device role 'Core Switch'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-roles/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-048",
+    "category": "dcim.device-roles",
+    "difficulty": "easy",
+    "task": "Update the device role 'PDU': set its description to 'Handles rack-mounted power distribution'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/device-roles/{id}/",
+        "body": {
+          "description": "Handles rack-mounted power distribution"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-050",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "task": "Delete the device type 'AP7901'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-052",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "task": "Delete the device type 'Flex system'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-053",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "task": "Delete the device type 'MX80'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-054",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "task": "Remove the device type 'ISR 1111-8P'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-056",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "task": "Remove the device type 'EX4200-48T'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-057",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "task": "Update the device type 'MX480': set its description to 'Re-certified for production use, Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/device-types/{id}/",
+        "body": {
+          "description": "Re-certified for production use, Q1 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-058",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "task": "Update the device type 'QFX5100-48T-6Q': set its description to 'Re-certified for production use, Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/device-types/{id}/",
+        "body": {
+          "description": "Re-certified for production use, Q1 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-059",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "task": "Update the device type 'EX9214': set its description to 'Re-certified for production use, Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/device-types/{id}/",
+        "body": {
+          "description": "Re-certified for production use, Q1 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-018",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "question": "Show me all device types with a U-height of 24.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?u_height=24.0"
+      }
+    ]
+  },
+  {
+    "id": "GT2-020",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "question": "Show me all device types with a U-height of 6.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?u_height=6.0"
+      }
+    ]
+  },
+  {
+    "id": "GT2-021",
+    "category": "dcim.device-types",
+    "difficulty": "easy",
+    "question": "Show me all device types with a U-height of 3.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?u_height=3.0"
+      }
+    ]
+  },
+  {
+    "id": "GT2-022",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "question": "Show me all device types made by Lenovo with a U-height of 4.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?manufacturer=Lenovo&u_height=4.0"
+      }
+    ]
+  },
+  {
+    "id": "GT2-023",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "question": "Show me all device types made by Cisco with a U-height of 1.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?manufacturer=Cisco&u_height=1.0"
+      }
+    ]
+  },
+  {
+    "id": "GT2-024",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "question": "Show me all device types made by Juniper with a U-height of 16.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?manufacturer=Juniper&u_height=16.0"
+      }
+    ]
+  },
+  {
+    "id": "GT2-026",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "question": "Show me all device types made by Opengear with a U-height of 0.5.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?manufacturer=Opengear&u_height=0.5"
+      }
+    ]
+  },
+  {
+    "id": "GT2-027",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "question": "Show me all device types made by Extreme with a U-height of 1.0.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/device-types/?manufacturer=Extreme&u_height=1.0"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-061",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'dmi01-buffalo-tor02' of device type 'QFX5110-48S-4C', with role 'ToR Switch', at the site 'DM-Buffalo', status 'active', platform 'Ubuntu Linux 20.04', and description 'New tor switch for DM-Buffalo'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-buffalo-tor02",
+          "device_type": "QFX5110-48S-4C",
+          "role": "ToR Switch",
+          "site": "DM-Buffalo",
+          "status": "active",
+          "platform": "Ubuntu Linux 20.04",
+          "description": "New tor switch for DM-Buffalo"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-062",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'jbb115-acc03' of device type 'EX4200-48T', with role 'Access Switch', at the site 'JBB Branch 115', status 'active', platform 'Cisco IOS', and description 'New access switch for JBB Branch 115'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "jbb115-acc03",
+          "device_type": "EX4200-48T",
+          "role": "Access Switch",
+          "site": "JBB Branch 115",
+          "status": "active",
+          "platform": "Cisco IOS",
+          "description": "New access switch for JBB Branch 115"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-063",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'dmi01-scranton-app02' of device type 'ISR 1111-8P', with role 'Application Server', at the site 'DM-Scranton', status 'active', platform 'Ubuntu Linux 20.04', and description 'New application server for DM-Scranton'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-scranton-app02",
+          "device_type": "ISR 1111-8P",
+          "role": "Application Server",
+          "site": "DM-Scranton",
+          "status": "active",
+          "platform": "Ubuntu Linux 20.04",
+          "description": "New application server for DM-Scranton"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-064",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'ncsu065-pdu03' of device type 'Flex system', with role 'PDU', at the site 'D. S. Weaver Labs', status 'active', platform 'Cisco IOS', and description 'New pdu for D. S. Weaver Labs'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "ncsu065-pdu03",
+          "device_type": "Flex system",
+          "role": "PDU",
+          "site": "D. S. Weaver Labs",
+          "status": "active",
+          "platform": "Cisco IOS",
+          "description": "New pdu for D. S. Weaver Labs"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-065",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'dmi01-rochester-rtr02' of device type 'MX480', with role 'Router', at the site 'DM-Rochester', status 'active', platform 'Cisco IOS', and description 'New router for DM-Rochester'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-rochester-rtr02",
+          "device_type": "MX480",
+          "role": "Router",
+          "site": "DM-Rochester",
+          "status": "active",
+          "platform": "Cisco IOS",
+          "description": "New router for DM-Rochester"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-068",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'dmi01-binghamton-patch02' of device type '24-Port Patch Panel', with role 'Patch Panel', at the site 'DM-Binghamton', status 'active', platform 'Cisco IOS', and description 'New patch panel for DM-Binghamton'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-binghamton-patch02",
+          "device_type": "24-Port Patch Panel",
+          "role": "Patch Panel",
+          "site": "DM-Binghamton",
+          "status": "active",
+          "platform": "Cisco IOS",
+          "description": "New patch panel for DM-Binghamton"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-072",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "task": "Create a new device named 'dmi01-yonkers-rtr02' of device type 'MX480', with role 'Router', at the site 'DM-Yonkers', status 'active', platform 'Ubuntu Linux 18.04', and description 'New router for DM-Yonkers'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-yonkers-rtr02",
+          "device_type": "MX480",
+          "role": "Router",
+          "site": "DM-Yonkers",
+          "status": "active",
+          "platform": "Ubuntu Linux 18.04",
+          "description": "New router for DM-Yonkers"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-028",
+    "category": "dcim.devices",
+    "difficulty": "medium",
+    "question": "Show me all devices, their status is active and with the role 'Router' manufactured by Juniper at the site 'DM-Akron'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Akron&role=Router&manufacturer=Juniper&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-031",
+    "category": "dcim.devices",
+    "difficulty": "easy",
+    "question": "Show me all devices, their status is active and with the role 'Distribution Switch' manufactured by Cisco at the site 'DM-Nashua'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Nashua&role=Distribution%20Switch&manufacturer=Cisco&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-033",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices, their status is active and with the role 'Database Server' manufactured by Opengear at the site 'DM-Rochester'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Rochester&role=Database%20Server&manufacturer=Opengear&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-034",
+    "category": "dcim.devices",
+    "difficulty": "medium",
+    "question": "Show me all devices, their status is active and with the role 'ToR Switch' manufactured by Juniper at the site 'DM-Scranton'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Scranton&role=ToR%20Switch&manufacturer=Juniper&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-035",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices, their status is active and with the role 'PDU' manufactured by Opengear at the site 'DM-Stamford'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Stamford&role=PDU&manufacturer=Opengear&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-036",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices, their status is active and with the role 'Patch Panel' manufactured by Opengear at the site 'DM-Utica'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Utica&role=Patch%20Panel&manufacturer=Opengear&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-037",
+    "category": "dcim.devices",
+    "difficulty": "easy",
+    "question": "Show me all devices, their status is active and at the site 'DM-Binghamton'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Binghamton&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-039",
+    "category": "dcim.devices",
+    "difficulty": "easy",
+    "question": "Show me all devices, their status is failed.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?status=failed"
+      }
+    ]
+  },
+  {
+    "id": "GT2-040",
+    "category": "dcim.devices",
+    "difficulty": "medium",
+    "question": "Show me all devices, their status is inventory.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?status=inventory"
+      }
+    ]
+  },
+  {
+    "id": "GT2-041",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices with the role 'Database Server' at the site 'DM-Yonkers' that belong to the tenant 'Strickland Propane'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=DM-Yonkers&tenant=Strickland%20Propane&role=Database%20Server"
+      }
+    ]
+  },
+  {
+    "id": "GT2-042",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices with the role 'Router' at the site 'JBB Branch 109' that belong to the tenant 'Initech'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=JBB%20Branch%20109&tenant=Initech&role=Router"
+      }
+    ]
+  },
+  {
+    "id": "GT2-043",
+    "category": "dcim.devices",
+    "difficulty": "medium",
+    "question": "Show me all devices with the role 'Core Switch' that are manufactured by Dell.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?role=Core%20Switch&manufacturer=Dell"
+      }
+    ]
+  },
+  {
+    "id": "GT2-044",
+    "category": "dcim.devices",
+    "difficulty": "medium",
+    "question": "Show me all devices with the role 'Distribution Switch' that are manufactured by Cisco.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?role=Distribution%20Switch&manufacturer=Cisco"
+      }
+    ]
+  },
+  {
+    "id": "GT2-045",
+    "category": "dcim.devices",
+    "difficulty": "easy",
+    "question": "Show me all devices, their status is active and with the role 'ToR Switch' at the site 'JBB Branch 133'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=JBB%20Branch%20133&role=ToR%20Switch&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-046",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices, their status is active and with the role 'Access Switch' at the site 'JBB Branch 109'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=JBB%20Branch%20109&role=Access%20Switch&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-047",
+    "category": "dcim.devices",
+    "difficulty": "easy",
+    "question": "Show me all devices with the role 'PDU' at the site 'D. S. Weaver Labs' that belong to the tenant 'Pied Piper'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site=D.%20S.%20Weaver%20Labs&tenant=Pied%20Piper&role=PDU"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-078",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/43' on the device 'dmi01-buffalo-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-080",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/42' on the device 'dmi01-yonkers-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-082",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/22' on the device 'dmi01-albany-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-083",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/3' on the device 'dmi01-albany-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-084",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'STACK1' on the device 'dmi01-buffalo-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-085",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/13' on the device 'dmi01-binghamton-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-086",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/48' on the device 'dmi01-binghamton-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-088",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/31' on the device 'dmi01-albany-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-090",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'xe-0/0/28' on the device 'ncsu128-distswitch1': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-091",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'et-0/0/48' on the device 'ncsu128-distswitch1': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-092",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet0/1/7' on the device 'dmi01-binghamton-rtr01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-093",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/33' on the device 'dmi01-buffalo-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-094",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'Po1' on the device 'dmi01-nashua-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-095",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet0/0/1' on the device 'dmi01-utica-rtr01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-096",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet0/1/3' on the device 'dmi01-stamford-rtr01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-097",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Update the interface 'GigabitEthernet1/0/19' on the device 'dmi01-nashua-sw01': disable it and set its description to 'Pending decommission review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/",
+        "body": {
+          "enabled": false,
+          "description": "Pending decommission review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-098",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Delete the interface 'xe-1/2/1' on the device 'ncsu-coreswitch2'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-099",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Delete the interface 'xe-0/0/45' on the device 'ncsu128-distswitch1'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-101",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Delete the interface 'GigabitEthernet1/0/43' on the device 'dmi01-akron-sw01'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-102",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Delete the interface 'GigabitEthernet1/0/44' on the device 'dmi01-buffalo-sw01'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-103",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Delete the interface 'GigabitEthernet1/0/32' on the device 'dmi01-nashua-sw01'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-104",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "task": "Delete the interface 'GigabitEthernet1/0/38' on the device 'dmi01-camden-sw01'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/interfaces/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "GT2-049",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "question": "Show me all disabled '1000base-t' interfaces on the device named 'dmi01-akron-rtr01'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/interfaces/?device=dmi01-akron-rtr01&type=1000base-t&enabled=false"
+      }
+    ]
+  },
+  {
+    "id": "GT2-050",
+    "category": "dcim.interfaces",
+    "difficulty": "hard",
+    "question": "Show me all enabled 'lag' interfaces on the device named 'dmi01-buffalo-rtr01'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/interfaces/?device=dmi01-buffalo-rtr01&type=lag&enabled=true"
+      }
+    ]
+  },
+  {
+    "id": "GT2-051",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "question": "Show me all disabled 'lag' interfaces on the device named 'dmi01-binghamton-rtr01'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/interfaces/?device=dmi01-binghamton-rtr01&type=lag&enabled=false"
+      }
+    ]
+  },
+  {
+    "id": "GT2-052",
+    "category": "dcim.interfaces",
+    "difficulty": "hard",
+    "question": "Show me all enabled '1000base-x-sfp' interfaces on the device named 'dmi01-scranton-rtr01'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/interfaces/?device=dmi01-scranton-rtr01&type=1000base-x-sfp&enabled=true"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-105",
+    "category": "dcim.locations",
+    "difficulty": "easy",
+    "task": "Create a new location named 'MDF Vault' with slug 'mdf-vault' at the site 'DM-Rochester', with description 'New secured equipment vault'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/locations/",
+        "body": {
+          "name": "MDF Vault",
+          "slug": "mdf-vault",
+          "site": "DM-Rochester",
+          "description": "New secured equipment vault"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-107",
+    "category": "dcim.locations",
+    "difficulty": "easy",
+    "task": "Create a new location named 'Annex C' with slug 'annex-c' at the site 'JBB Branch 115', with description 'New expansion area'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/locations/",
+        "body": {
+          "name": "Annex C",
+          "slug": "annex-c",
+          "site": "JBB Branch 115",
+          "description": "New expansion area"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-109",
+    "category": "dcim.locations",
+    "difficulty": "easy",
+    "task": "Create a new location named 'Row 14' with slug 'row-14' at the site 'DM-Utica', with description 'New storage row'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/locations/",
+        "body": {
+          "name": "Row 14",
+          "slug": "row-14",
+          "site": "DM-Utica",
+          "description": "New storage row"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-111",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "task": "Delete the manufacturer 'Opengear'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/manufacturers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-112",
+    "category": "dcim.manufacturers",
+    "difficulty": "medium",
+    "task": "Delete the manufacturer 'Ubiquiti'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/manufacturers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-113",
+    "category": "dcim.manufacturers",
+    "difficulty": "medium",
+    "task": "Delete the manufacturer 'APC'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/manufacturers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-114",
+    "category": "dcim.manufacturers",
+    "difficulty": "medium",
+    "task": "Delete the manufacturer 'Panduit'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/manufacturers/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-116",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "task": "Create a new manufacturer named 'Ubiquiti Networks' with slug 'ubiquiti-networks' and description 'Wireless and networking hardware vendor'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/manufacturers/",
+        "body": {
+          "name": "Ubiquiti Networks",
+          "slug": "ubiquiti-networks",
+          "description": "Wireless and networking hardware vendor"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-118",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "task": "Create a new manufacturer named 'Cambium Networks' with slug 'cambium-networks' and description 'Fixed wireless broadband and Wi-Fi vendor'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/manufacturers/",
+        "body": {
+          "name": "Cambium Networks",
+          "slug": "cambium-networks",
+          "description": "Fixed wireless broadband and Wi-Fi vendor"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-121",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "task": "Update the manufacturer 'Brocade': set its description to 'Vendor record verified, Q1 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/manufacturers/{id}/",
+        "body": {
+          "description": "Vendor record verified, Q1 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-122",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "task": "Update the manufacturer 'Extreme': set its description to 'Vendor record verified, Q1 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/manufacturers/{id}/",
+        "body": {
+          "description": "Vendor record verified, Q1 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-124",
+    "category": "dcim.platforms",
+    "difficulty": "easy",
+    "task": "Create a new platform named 'Juniper Junos' with slug 'juniper-junos' and description 'Juniper Networks JUNOS operating system'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/platforms/",
+        "body": {
+          "name": "Juniper Junos",
+          "slug": "juniper-junos",
+          "description": "Juniper Networks JUNOS operating system"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-125",
+    "category": "dcim.platforms",
+    "difficulty": "easy",
+    "task": "Create a new platform named 'VMware ESXi' with slug 'vmware-esxi' and description 'VMware ESXi hypervisor platform'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/platforms/",
+        "body": {
+          "name": "VMware ESXi",
+          "slug": "vmware-esxi",
+          "description": "VMware ESXi hypervisor platform"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-126",
+    "category": "dcim.platforms",
+    "difficulty": "easy",
+    "task": "Create a new platform named 'Debian 12' with slug 'debian-12' and description 'Debian 12 (Bookworm) server platform'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/platforms/",
+        "body": {
+          "name": "Debian 12",
+          "slug": "debian-12",
+          "description": "Debian 12 (Bookworm) server platform"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-129",
+    "category": "dcim.platforms",
+    "difficulty": "easy",
+    "task": "Update the platform 'Ubuntu Linux 20.04': set its description to 'Approved platform, confirmed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/platforms/{id}/",
+        "body": {
+          "description": "Approved platform, confirmed Q1 2026"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-130",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "task": "Create a new power feed named 'P-3-BACKUP' on power panel 'Panel 3', with status 'offline', and description 'backup feed on panel 3'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-3-BACKUP",
+          "power_panel": "Panel 3",
+          "status": "offline",
+          "description": "backup feed on panel 3"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-131",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "task": "Create a new power feed named 'P-4-BACKUP' on power panel 'Panel 4', with status 'offline', and description 'backup feed on panel 4'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-4-BACKUP",
+          "power_panel": "Panel 4",
+          "status": "offline",
+          "description": "backup feed on panel 4"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-132",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "task": "Create a new power feed named 'P-1-AUX' on power panel 'Panel 1', with status 'active', amperage 20, and voltage 120.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-1-AUX",
+          "power_panel": "Panel 1",
+          "status": "active",
+          "amperage": 20,
+          "voltage": 120
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-133",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "task": "Create a new power feed named 'P-2-AUX' on power panel 'Panel 2', with status 'active', amperage 20, and voltage 120.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-2-AUX",
+          "power_panel": "Panel 2",
+          "status": "active",
+          "amperage": 20,
+          "voltage": 120
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-134",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "task": "Create a new power feed named 'P-3-AUX' on power panel 'Panel 3', with status 'active', amperage 20, and voltage 120.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-3-AUX",
+          "power_panel": "Panel 3",
+          "status": "active",
+          "amperage": 20,
+          "voltage": 120
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-135",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "task": "Create a new power feed named 'P-4-AUX' on power panel 'Panel 4', with status 'planned', and description 'planned auxiliary feed on panel 4'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-4-AUX",
+          "power_panel": "Panel 4",
+          "status": "planned",
+          "description": "planned auxiliary feed on panel 4"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-053",
+    "category": "dcim.power-feeds",
+    "difficulty": "easy",
+    "question": "Show me all power feeds, their status is offline.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/power-feeds/?status=offline"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-136",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "task": "Update the rack role 'Infrastructure': set its description to 'Usage category confirmed, Q1 2026 review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/rack-roles/{id}/",
+        "body": {
+          "description": "Usage category confirmed, Q1 2026 review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-137",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "task": "Update the rack role 'Compute': set its description to 'Usage category confirmed, Q1 2026 review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/rack-roles/{id}/",
+        "body": {
+          "description": "Usage category confirmed, Q1 2026 review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-139",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "task": "Update the rack role 'IDF': set its description to 'Usage category confirmed, Q1 2026 review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/rack-roles/{id}/",
+        "body": {
+          "description": "Usage category confirmed, Q1 2026 review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-140",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "task": "Create a new rack role named 'Edge' with slug 'edge', color '8bc34a', and description 'Racks hosting edge compute equipment'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/rack-roles/",
+        "body": {
+          "name": "Edge",
+          "slug": "edge",
+          "color": "8bc34a",
+          "description": "Racks hosting edge compute equipment"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-141",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "task": "Create a new rack role named 'Backup' with slug 'backup', color '795548', and description 'Racks dedicated to backup and archival systems'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/rack-roles/",
+        "body": {
+          "name": "Backup",
+          "slug": "backup",
+          "color": "795548",
+          "description": "Racks dedicated to backup and archival systems"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-142",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "task": "Create a new rack role named 'Test' with slug 'test', color '9e9e9e', and description 'Racks reserved for pre-production testing'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/rack-roles/",
+        "body": {
+          "name": "Test",
+          "slug": "test",
+          "color": "9e9e9e",
+          "description": "Racks reserved for pre-production testing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-143",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R205': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-144",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R303': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-145",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R302': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-146",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R206': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-148",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R308': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-150",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'Comms closet' at the site 'DM-Albany': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-151",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R304': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-152",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'Comms closet' at the site 'DM-Syracuse': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-153",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R208': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-154",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R104': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-155",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R305': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-156",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R307': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-157",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Update the rack 'R306': set its status to 'active' and its description to 'Confirmed during 2026 inventory sweep'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Confirmed during 2026 inventory sweep"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-158",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'IDF128'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-159",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'R204'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-160",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'R207'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-161",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'R301'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-163",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'R106'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-164",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'R202'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-166",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "task": "Delete the rack 'R303'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "GT2-054",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "Show me all racks, their status is deprecated.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?status=deprecated"
+      }
+    ]
+  },
+  {
+    "id": "GT2-057",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "Show me all racks, their status is planned and with no role assigned at the site 'DM-Utica'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?site=DM-Utica&role_id=null&status=planned"
+      }
+    ]
+  },
+  {
+    "id": "GT2-058",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "Show me all racks, their status is active and with the role 'IDF' at the site 'D. S. Weaver Labs'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?site=D.%20S.%20Weaver%20Labs&role=IDF&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-059",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "List all racks whose status is reserved.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?status=reserved"
+      }
+    ]
+  },
+  {
+    "id": "GT2-060",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "List all racks whose status is offline.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?status=offline"
+      }
+    ]
+  },
+  {
+    "id": "GT2-061",
+    "category": "dcim.racks",
+    "difficulty": "hard",
+    "question": "Show me all racks, their status is active and with the role 'Compute' at the site 'DM-Rochester'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?site=DM-Rochester&role=Compute&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-062",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "List all racks whose status is available.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?status=available"
+      }
+    ]
+  },
+  {
+    "id": "GT2-063",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "List all racks whose status is staged.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?status=staged"
+      }
+    ]
+  },
+  {
+    "id": "GT2-064",
+    "category": "dcim.racks",
+    "difficulty": "hard",
+    "question": "Show me all racks, their status is active and with the role 'Infrastructure' at the site 'JBB Branch 133'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/racks/?site=JBB%20Branch%20133&role=Infrastructure&status=active"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-167",
+    "category": "dcim.regions",
+    "difficulty": "medium",
+    "task": "Delete the region 'Mexico'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/regions/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-168",
+    "category": "dcim.regions",
+    "difficulty": "medium",
+    "task": "Delete the region 'United Kingdon'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/regions/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-169",
+    "category": "dcim.regions",
+    "difficulty": "medium",
+    "task": "Delete the region 'Germany'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/regions/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-170",
+    "category": "dcim.regions",
+    "difficulty": "medium",
+    "task": "Delete the region 'India'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/regions/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-171",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Update the region 'Wisconsin': set its description to 'Boundary re-confirmed, 2026 territory review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/{id}/",
+        "body": {
+          "description": "Boundary re-confirmed, 2026 territory review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-172",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Update the region 'New Jersey': set its description to 'Boundary re-confirmed, 2026 territory review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/{id}/",
+        "body": {
+          "description": "Boundary re-confirmed, 2026 territory review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-173",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Update the region 'New York': set its description to 'Boundary re-confirmed, 2026 territory review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/{id}/",
+        "body": {
+          "description": "Boundary re-confirmed, 2026 territory review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-174",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Update the region 'Georgia': set its description to 'Boundary re-confirmed, 2026 territory review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/{id}/",
+        "body": {
+          "description": "Boundary re-confirmed, 2026 territory review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-175",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Update the region 'South Carolina': set its description to 'Boundary re-confirmed, 2026 territory review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/{id}/",
+        "body": {
+          "description": "Boundary re-confirmed, 2026 territory review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-176",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Update the region 'District of Columbia': set its description to 'Boundary re-confirmed, 2026 territory review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/{id}/",
+        "body": {
+          "description": "Boundary re-confirmed, 2026 territory review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-177",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Create a new region named 'Nordic Countries' with slug 'nordic-countries' and description 'Nordic member territories'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/regions/",
+        "body": {
+          "name": "Nordic Countries",
+          "slug": "nordic-countries",
+          "description": "Nordic member territories"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-178",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Create a new region named 'Baltic States' with slug 'baltic-states' and description 'Baltic member territories'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/regions/",
+        "body": {
+          "name": "Baltic States",
+          "slug": "baltic-states",
+          "description": "Baltic member territories"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-179",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "task": "Create a new region named 'Balkans' with slug 'balkans' and description 'Balkan peninsula territories'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/regions/",
+        "body": {
+          "name": "Balkans",
+          "slug": "balkans",
+          "description": "Balkan peninsula territories"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-181",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "task": "Update the site group 'Customer Sites': set its description to 'Grouping confirmed for 2026 planning cycle'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/site-groups/{id}/",
+        "body": {
+          "description": "Grouping confirmed for 2026 planning cycle"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-182",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "task": "Update the site group 'Branch Offices': set its description to 'Grouping confirmed for 2026 planning cycle'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/site-groups/{id}/",
+        "body": {
+          "description": "Grouping confirmed for 2026 planning cycle"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-183",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "task": "Update the site group 'Headquarters': set its description to 'Grouping confirmed for 2026 planning cycle'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/site-groups/{id}/",
+        "body": {
+          "description": "Grouping confirmed for 2026 planning cycle"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-184",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "task": "Create a new site group named 'Lab Sites' with slug 'lab-sites' and description 'Internal lab and R&D locations'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/site-groups/",
+        "body": {
+          "name": "Lab Sites",
+          "slug": "lab-sites",
+          "description": "Internal lab and R&D locations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-185",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "task": "Create a new site group named 'Partner Sites' with slug 'partner-sites' and description 'Third-party partner-hosted locations'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/site-groups/",
+        "body": {
+          "name": "Partner Sites",
+          "slug": "partner-sites",
+          "description": "Third-party partner-hosted locations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-186",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "task": "Create a new site group named 'Regional Offices' with slug 'regional-offices' and description 'Standalone regional office locations'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/site-groups/",
+        "body": {
+          "name": "Regional Offices",
+          "slug": "regional-offices",
+          "description": "Standalone regional office locations"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-187",
+    "category": "dcim.sites",
+    "difficulty": "medium",
+    "task": "Delete the site 'DM-Akron'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-188",
+    "category": "dcim.sites",
+    "difficulty": "medium",
+    "task": "Delete the site 'DM-Albany'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-189",
+    "category": "dcim.sites",
+    "difficulty": "medium",
+    "task": "Delete the site 'DM-Syracuse'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-190",
+    "category": "dcim.sites",
+    "difficulty": "medium",
+    "task": "Delete the site 'JBB Branch 104'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-191",
+    "category": "dcim.sites",
+    "difficulty": "medium",
+    "task": "Delete the site 'JBB Branch 120'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-192",
+    "category": "dcim.sites",
+    "difficulty": "medium",
+    "task": "Delete the site 'JBB Branch 133'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-193",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "task": "Create a new site named 'DM-Boston' with slug 'dm-boston', status 'active', in the region 'New York', with facility ID 'BOS-01' and description 'New regional office'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/sites/",
+        "body": {
+          "name": "DM-Boston",
+          "slug": "dm-boston",
+          "status": "active",
+          "region": "New York",
+          "facility": "BOS-01",
+          "description": "New regional office"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-194",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "task": "Create a new site named 'DM-Concord' with slug 'dm-concord', status 'active', in the region 'New York', with facility ID 'CNC-01' and description 'New branch office'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/sites/",
+        "body": {
+          "name": "DM-Concord",
+          "slug": "dm-concord",
+          "status": "active",
+          "region": "New York",
+          "facility": "CNC-01",
+          "description": "New branch office"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-197",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "task": "Create a new site named 'DM-Toledo' with slug 'dm-toledo', status 'active', in the region 'Ohio', with facility ID 'TOL-01' and description 'New branch office'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/sites/",
+        "body": {
+          "name": "DM-Toledo",
+          "slug": "dm-toledo",
+          "status": "active",
+          "region": "Ohio",
+          "facility": "TOL-01",
+          "description": "New branch office"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-198",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "task": "Create a new site named 'DM-Dayton' with slug 'dm-dayton', status 'active', in the region 'Ohio', with facility ID 'DAY-01' and description 'New branch office'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/sites/",
+        "body": {
+          "name": "DM-Dayton",
+          "slug": "dm-dayton",
+          "status": "active",
+          "region": "Ohio",
+          "facility": "DAY-01",
+          "description": "New branch office"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-199",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "task": "Create a new site named 'DM-Akron-East' with slug 'dm-akron-east', status 'active', in the region 'North America', with facility ID 'AKE-01' and description 'New expansion site'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/sites/",
+        "body": {
+          "name": "DM-Akron-East",
+          "slug": "dm-akron-east",
+          "status": "active",
+          "region": "North America",
+          "facility": "AKE-01",
+          "description": "New expansion site"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-200",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "task": "Create a new site named 'DM-Worcester' with slug 'dm-worcester', status 'active', in the region 'New York', with facility ID 'WOR-01' and description 'New branch office'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/sites/",
+        "body": {
+          "name": "DM-Worcester",
+          "slug": "dm-worcester",
+          "status": "active",
+          "region": "New York",
+          "facility": "WOR-01",
+          "description": "New branch office"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-202",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "task": "Create a new tag named 'Omega' with slug 'omega', color 'e91e63', and description 'Omega-phase rollout marker'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/extras/tags/",
+        "body": {
+          "name": "Omega",
+          "slug": "omega",
+          "color": "e91e63",
+          "description": "Omega-phase rollout marker"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-203",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "task": "Create a new tag named 'Epsilon' with slug 'epsilon', color '00bcd4', and description 'Epsilon-phase rollout marker'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/extras/tags/",
+        "body": {
+          "name": "Epsilon",
+          "slug": "epsilon",
+          "color": "00bcd4",
+          "description": "Epsilon-phase rollout marker"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-205",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "task": "Update the tag 'Alpha': set its description to 'Retained and re-validated for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/extras/tags/{id}/",
+        "body": {
+          "description": "Retained and re-validated for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-206",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "task": "Update the tag 'Charlie': set its description to 'Retained and re-validated for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/extras/tags/{id}/",
+        "body": {
+          "description": "Retained and re-validated for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-208",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "task": "Update the tag 'Tango': set its description to 'Retained and re-validated for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/extras/tags/{id}/",
+        "body": {
+          "description": "Retained and re-validated for 2026 rollout"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-210",
+    "category": "ipam.asns",
+    "difficulty": "easy",
+    "task": "Create a new ASN 65110 in the RIR 'ARIN', with description 'New peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65110,
+          "rir": "ARIN",
+          "description": "New peering ASN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-211",
+    "category": "ipam.asns",
+    "difficulty": "easy",
+    "task": "Create a new ASN 65111 in the RIR 'ARIN', with description 'New peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65111,
+          "rir": "ARIN",
+          "description": "New peering ASN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-213",
+    "category": "ipam.asns",
+    "difficulty": "easy",
+    "task": "Create a new ASN 65113 in the RIR 'RIPE NCC', with description 'New European peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65113,
+          "rir": "RIPE NCC",
+          "description": "New European peering ASN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-214",
+    "category": "ipam.asns",
+    "difficulty": "easy",
+    "task": "Create a new ASN 65114 in the RIR 'APNIC', with description 'New APAC peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65114,
+          "rir": "APNIC",
+          "description": "New APAC peering ASN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-215",
+    "category": "ipam.asns",
+    "difficulty": "easy",
+    "task": "Create a new ASN 65115 in the RIR 'LACNIC', with description 'New Latin America peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65115,
+          "rir": "LACNIC",
+          "description": "New Latin America peering ASN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-216",
+    "category": "ipam.asns",
+    "difficulty": "easy",
+    "task": "Create a new ASN 65116 in the RIR 'AFRINIC', with description 'New Africa peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65116,
+          "rir": "AFRINIC",
+          "description": "New Africa peering ASN"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-218",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '192.168.0.17/22': set its status to 'active' and its DNS name to 'node-17.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-17.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-219",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '172.20.0.23/24': set its status to 'active' and its DNS name to 'node-173.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-173.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-220",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '172.18.0.27/24': set its status to 'active' and its DNS name to 'node-117.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-117.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-221",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '172.18.0.21/24': set its status to 'active' and its DNS name to 'node-111.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-111.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-222",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '172.19.0.1/24': set its status to 'active' and its DNS name to 'node-121.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-121.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-225",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '192.168.0.9/22': set its status to 'active' and its DNS name to 'node-9.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-9.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-226",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '172.19.0.12/24': set its status to 'active' and its DNS name to 'node-132.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-132.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-227",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "task": "Update the IP address '172.20.0.10/24': set its status to 'active' and its DNS name to 'node-160.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/{id}/",
+        "body": {
+          "status": "active",
+          "dns_name": "node-160.example.com"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-065",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "List all IP addresses whose status is dhcp.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=dhcp"
+      }
+    ]
+  },
+  {
+    "id": "GT2-066",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "Show me all IP addresses, their status is reserved and that belong to the VRF 'Bravo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=reserved&vrf=Bravo"
+      }
+    ]
+  },
+  {
+    "id": "GT2-069",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "Show me all IP addresses, their status is deprecated and that belong to the VRF 'Charlie'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=deprecated&vrf=Charlie"
+      }
+    ]
+  },
+  {
+    "id": "GT2-071",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "Show me all IP addresses, their status is dhcp and that belong to the VRF 'Shared'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=dhcp&vrf=Shared"
+      }
+    ]
+  },
+  {
+    "id": "GT2-072",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "List all IP addresses whose status is active.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-073",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "List all IP addresses whose status is reserved.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=reserved"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-228",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "task": "Delete the prefix '172.20.2.0/24'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/prefixes/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-230",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "task": "Delete the prefix '10.112.137.0/24'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/prefixes/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "GT2-074",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Data' that belong to the VRF 'Echo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Access%20-%20Data&vrf=Echo&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-075",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Voice' that belong to the VRF 'Delta'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Access%20-%20Voice&vrf=Delta&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-076",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Wireless' that belong to the VRF 'Alpha'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Access%20-%20Wireless&vrf=Alpha&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-078",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is active and with the role 'Management' that belong to the VRF 'Shared'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Management&vrf=Shared&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-079",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is active and with the role 'Management' that belong to the VRF 'Echo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Management&vrf=Echo&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-080",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is active and with the role 'Testing' that belong to the VRF 'Alpha'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Testing&vrf=Alpha&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-082",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "List all prefixes with status active, role 'Access - Data', belonging to the VRF 'Bravo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role=Access%20-%20Data&vrf=Bravo&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-084",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is reserved and that belong to the VRF 'Bravo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=reserved&vrf=Bravo"
+      }
+    ]
+  },
+  {
+    "id": "GT2-085",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is container and that belong to the VRF 'Alpha'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=container&vrf=Alpha"
+      }
+    ]
+  },
+  {
+    "id": "GT2-086",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is container and that belong to the VRF 'Bravo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=container&vrf=Bravo"
+      }
+    ]
+  },
+  {
+    "id": "GT2-089",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "List all prefixes whose status is active.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-090",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "List all prefixes whose status is container.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=container"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-231",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "task": "Update the prefix/VLAN role 'Access - Data': set its description to 'Segment purpose confirmed, 2026 network review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/roles/{id}/",
+        "body": {
+          "description": "Segment purpose confirmed, 2026 network review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-232",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "task": "Update the prefix/VLAN role 'Access - Voice': set its description to 'Segment purpose confirmed, 2026 network review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/roles/{id}/",
+        "body": {
+          "description": "Segment purpose confirmed, 2026 network review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-233",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "task": "Update the prefix/VLAN role 'Access - Wireless': set its description to 'Segment purpose confirmed, 2026 network review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/roles/{id}/",
+        "body": {
+          "description": "Segment purpose confirmed, 2026 network review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-235",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "task": "Update the prefix/VLAN role 'Testing': set its description to 'Segment purpose confirmed, 2026 network review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/roles/{id}/",
+        "body": {
+          "description": "Segment purpose confirmed, 2026 network review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-236",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "task": "Create a new prefix/VLAN role named 'IoT' with slug 'iot' and description 'IoT device network segments'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/roles/",
+        "body": {
+          "name": "IoT",
+          "slug": "iot",
+          "description": "IoT device network segments"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-238",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "task": "Create a new prefix/VLAN role named 'Peering' with slug 'peering' and description 'External peering network segments'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/roles/",
+        "body": {
+          "name": "Peering",
+          "slug": "peering",
+          "description": "External peering network segments"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-240",
+    "category": "ipam.vlan-groups",
+    "difficulty": "medium",
+    "task": "Please delete the VLAN group 'JBB109'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlan-groups/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-241",
+    "category": "ipam.vlan-groups",
+    "difficulty": "medium",
+    "task": "Delete the VLAN group 'JBB133'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlan-groups/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-243",
+    "category": "ipam.vlan-groups",
+    "difficulty": "medium",
+    "task": "Please delete the VLAN group 'JBB127'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlan-groups/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-244",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "task": "Update the VLAN group 'JBB104': set its description to 'VLAN pool scope confirmed, 2026 review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlan-groups/{id}/",
+        "body": {
+          "description": "VLAN pool scope confirmed, 2026 review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-331",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 57 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/57/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-246",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "task": "Update the VLAN group 'JBB-Global': set its description to 'VLAN pool scope confirmed, 2026 review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlan-groups/{id}/",
+        "body": {
+          "description": "VLAN pool scope confirmed, 2026 review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-247",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "task": "Create a new VLAN group named 'DC-Mgmt' with slug 'dc-mgmt' and description 'Data center management VLAN pool'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/vlan-groups/",
+        "body": {
+          "name": "DC-Mgmt",
+          "slug": "dc-mgmt",
+          "description": "Data center management VLAN pool"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-248",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "task": "Create a new VLAN group named 'Edge-Voice' with slug 'edge-voice' and description 'Edge-site voice VLAN pool'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/vlan-groups/",
+        "body": {
+          "name": "Edge-Voice",
+          "slug": "edge-voice",
+          "description": "Edge-site voice VLAN pool"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-249",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "task": "Create a new VLAN group named 'Guest-Pool' with slug 'guest-pool' and description 'Guest network VLAN pool'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/vlan-groups/",
+        "body": {
+          "name": "Guest-Pool",
+          "slug": "guest-pool",
+          "description": "Guest network VLAN pool"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-250",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "task": "Create a new VLAN group named 'IoT-Segment' with slug 'iot-segment' and description 'IoT device VLAN pool'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/vlan-groups/",
+        "body": {
+          "name": "IoT-Segment",
+          "slug": "iot-segment",
+          "description": "IoT device VLAN pool"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-251",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Wireless' (VID 203) at the site 'JBB Branch 104': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-252",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Voice' (VID 202) at the site 'JBB Branch 109': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-254",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Wireless' (VID 300) at the site 'DM-Binghamton': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-257",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Wireless' (VID 300) at the site 'DM-Syracuse': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-258",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Wireless' (VID 300) at the site 'DM-Rochester': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-259",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Voice' (VID 200) at the site 'DM-Scranton': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-260",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Data' (VID 100) at the site 'DM-Pittsfield': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-261",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Update the VLAN 'Voice' (VID 200) at the site 'DM-Utica': set its status to 'active' and its description to 'Segment re-validated, 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Segment re-validated, 2026 audit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-264",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Delete the VLAN with VID 200 (named 'Voice') at the site 'DM-Buffalo'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlans/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-266",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Delete the VLAN with VID 300 (named 'Wireless') at the site 'DM-Nashua'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlans/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-267",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "task": "Delete the VLAN with VID 100 (named 'Data') at the site 'DM-Scranton'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlans/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "GT2-092",
+    "category": "ipam.vlans",
+    "difficulty": "easy",
+    "question": "List all VLANs whose status is active.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/vlans/?status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-093",
+    "category": "ipam.vlans",
+    "difficulty": "easy",
+    "question": "List all VLANs whose status is reserved.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/vlans/?status=reserved"
+      }
+    ]
+  },
+  {
+    "id": "GT2-094",
+    "category": "ipam.vlans",
+    "difficulty": "easy",
+    "question": "Show me all VLANs, their status is active and belonging to the group 'JBB-Global'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/vlans/?group=JBB-Global&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-096",
+    "category": "ipam.vlans",
+    "difficulty": "easy",
+    "question": "Show me all VLANs at the site 'DM-Akron'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/vlans/?site=DM-Akron"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-269",
+    "category": "ipam.vrfs",
+    "difficulty": "medium",
+    "task": "Please delete the VRF 'Alpha'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vrfs/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-270",
+    "category": "ipam.vrfs",
+    "difficulty": "medium",
+    "task": "Please delete the VRF 'Bravo'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vrfs/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-271",
+    "category": "ipam.vrfs",
+    "difficulty": "medium",
+    "task": "Please delete the VRF 'Charlie'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vrfs/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-272",
+    "category": "ipam.vrfs",
+    "difficulty": "medium",
+    "task": "Please delete the VRF 'Delta'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vrfs/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-273",
+    "category": "ipam.vrfs",
+    "difficulty": "medium",
+    "task": "Please delete the VRF 'Echo'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vrfs/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "GT2-098",
+    "category": "ipam.vrfs",
+    "difficulty": "easy",
+    "question": "Show me all VRFs that do not enforce unique space.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/vrfs/?enforce_unique=false"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-274",
+    "category": "tenancy.tenant-groups",
+    "difficulty": "medium",
+    "task": "Please delete the tenant group 'Customers'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/tenancy/tenant-groups/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-275",
+    "category": "tenancy.tenant-groups",
+    "difficulty": "easy",
+    "task": "Create a new tenant group named 'Non-Profit' with slug 'non-profit' and description 'Non-profit and NGO tenants'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenant-groups/",
+        "body": {
+          "name": "Non-Profit",
+          "slug": "non-profit",
+          "description": "Non-profit and NGO tenants"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-279",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Delete the tenant 'Strickland Propane'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/tenancy/tenants/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-280",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Delete the tenant 'Pied Piper'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/tenancy/tenants/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-281",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Delete the tenant 'Stark Industries'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/tenancy/tenants/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-282",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Cyberdyne Systems' with slug 'cyberdyne-systems', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Cyberdyne Systems",
+          "slug": "cyberdyne-systems",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-283",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Tyrell Corporation' with slug 'tyrell-corporation', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Tyrell Corporation",
+          "slug": "tyrell-corporation",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-284",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Umbrella Corporation' with slug 'umbrella-corporation', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Umbrella Corporation",
+          "slug": "umbrella-corporation",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-285",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Weyland-Yutani' with slug 'weyland-yutani', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Weyland-Yutani",
+          "slug": "weyland-yutani",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-286",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Aperture Science' with slug 'aperture-science', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Aperture Science",
+          "slug": "aperture-science",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-287",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Vandelay Industries' with slug 'vandelay-industries', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Vandelay Industries",
+          "slug": "vandelay-industries",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-288",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "task": "Create a new tenant named 'Hooli' with slug 'hooli', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Hooli",
+          "slug": "hooli",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-290",
+    "category": "virtualization.cluster-types",
+    "difficulty": "easy",
+    "task": "Create a new cluster type named 'OpenStack' with slug 'openstack' and description 'OpenStack private cloud cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/cluster-types/",
+        "body": {
+          "name": "OpenStack",
+          "slug": "openstack",
+          "description": "OpenStack private cloud cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-291",
+    "category": "virtualization.cluster-types",
+    "difficulty": "easy",
+    "task": "Create a new cluster type named 'Hyper-V' with slug 'hyper-v' and description 'Microsoft Hyper-V virtualization cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/cluster-types/",
+        "body": {
+          "name": "Hyper-V",
+          "slug": "hyper-v",
+          "description": "Microsoft Hyper-V virtualization cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-292",
+    "category": "virtualization.cluster-types",
+    "difficulty": "easy",
+    "task": "Create a new cluster type named 'oVirt' with slug 'ovirt' and description 'oVirt open-source virtualization cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/cluster-types/",
+        "body": {
+          "name": "oVirt",
+          "slug": "ovirt",
+          "description": "oVirt open-source virtualization cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-293",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Delete the cluster 'DO-SFO3'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/virtualization/clusters/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-294",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Delete the cluster 'DO-SGP1'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/virtualization/clusters/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-295",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Delete the cluster 'DO-AMS3'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/virtualization/clusters/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-297",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Delete the cluster 'gc-europe-west4'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/virtualization/clusters/{id}/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-298",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Create a new cluster named 'PVE-PHX1' of the type 'DigitalOcean', with status 'active' and description 'Phoenix edge compute cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-PHX1",
+          "type": "DigitalOcean",
+          "status": "active",
+          "description": "Phoenix edge compute cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-299",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Create a new cluster named 'PVE-LAS1' of the type 'DigitalOcean', with status 'active' and description 'Las Vegas edge compute cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-LAS1",
+          "type": "DigitalOcean",
+          "status": "active",
+          "description": "Las Vegas edge compute cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-301",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Create a new cluster named 'PVE-PDX1' of the type 'KVM', with status 'active' and description 'Portland on-prem KVM cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-PDX1",
+          "type": "KVM",
+          "status": "active",
+          "description": "Portland on-prem KVM cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-303",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Create a new cluster named 'PVE-AUS1' of the type 'VMware', with status 'active' and description 'Austin VMware cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-AUS1",
+          "type": "VMware",
+          "status": "active",
+          "description": "Austin VMware cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-304",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "task": "Create a new cluster named 'PVE-HOU1' of the type 'DigitalOcean', with status 'active' and description 'Houston edge compute cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-HOU1",
+          "type": "DigitalOcean",
+          "status": "active",
+          "description": "Houston edge compute cluster"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-305",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "task": "Update the virtual machine 'vm66': set its status to 'active' and its description to 'Verified during 2026 capacity review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Verified during 2026 capacity review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-306",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "task": "Update the virtual machine 'vm80': set its status to 'active' and its description to 'Verified during 2026 capacity review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Verified during 2026 capacity review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-308",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "task": "Update the virtual machine 'vm89': set its status to 'active' and its description to 'Verified during 2026 capacity review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Verified during 2026 capacity review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-309",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "task": "Update the virtual machine 'vm69': set its status to 'active' and its description to 'Verified during 2026 capacity review'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/{id}/",
+        "body": {
+          "status": "active",
+          "description": "Verified during 2026 capacity review"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-324",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-batch-301' on the cluster 'gc-us-central1', with platform 'Ubuntu Linux 20.04', status 'active', and description 'New workload instance'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-batch-301",
+          "cluster": "gc-us-central1",
+          "platform": "Ubuntu Linux 20.04",
+          "status": "active",
+          "description": "New workload instance"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-325",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-api-401' on the cluster 'DO-SGP1', with platform 'Ubuntu Linux 18.04', status 'active', and description 'New API gateway VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-api-401",
+          "cluster": "DO-SGP1",
+          "platform": "Ubuntu Linux 18.04",
+          "status": "active",
+          "description": "New API gateway VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-326",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-cdn-501' on the cluster 'gc-europe-west1', with platform 'Cisco IOS', status 'active', and description 'New CDN edge VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-cdn-501",
+          "cluster": "gc-europe-west1",
+          "platform": "Cisco IOS",
+          "status": "active",
+          "description": "New CDN edge VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-327",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-log-601' on the cluster 'DO-LON1', with platform 'Ubuntu Linux 20.04', status 'active', and description 'New logging VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-log-601",
+          "cluster": "DO-LON1",
+          "platform": "Ubuntu Linux 20.04",
+          "status": "active",
+          "description": "New logging VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GT2-100",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is failed.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?status=failed"
+      }
+    ]
+  },
+  {
+    "id": "GT2-101",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is planned.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?status=planned"
+      }
+    ]
+  },
+  {
+    "id": "GT2-102",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'gc-us-west1' running the platform 'Cisco IOS'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=gc-us-west1&platform=Cisco%20IOS&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-104",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines on the cluster 'DO-TOR1' running the platform 'Ubuntu Linux 18.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=DO-TOR1&platform=Ubuntu%20Linux%2018.04"
+      }
+    ]
+  },
+  {
+    "id": "GT2-106",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'gc-us-east4' running the platform 'Cisco IOS'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=gc-us-east4&platform=Cisco%20IOS&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-109",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'DO-AMS3' running the platform 'Ubuntu Linux 20.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=DO-AMS3&platform=Ubuntu%20Linux%2020.04&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-110",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines on the cluster 'gc-asia-southeast2' running the platform 'Cisco IOS'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=gc-asia-southeast2&platform=Cisco%20IOS"
+      }
+    ]
+  },
+  {
+    "id": "GT2-112",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines on the cluster 'DO-FRA1' running the platform 'Ubuntu Linux 18.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=DO-FRA1&platform=Ubuntu%20Linux%2018.04"
+      }
+    ]
+  },
+  {
+    "id": "GT2-113",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'gc-southamerica-southeast1' running the platform 'Cisco IOS'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=gc-southamerica-southeast1&platform=Cisco%20IOS&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-115",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'DO-SGP1' running the platform 'Ubuntu Linux 20.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=DO-SGP1&platform=Ubuntu%20Linux%2020.04&status=active"
+      }
+    ]
+  },
+  {
+    "id": "GT2-116",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines on the cluster 'gc-europe-north1' running the platform 'Cisco IOS'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=gc-europe-north1&platform=Cisco%20IOS"
+      }
+    ]
+  },
+  {
+    "id": "GT2-117",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'DO-NYC3' running the platform 'Ubuntu Linux 18.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster=DO-NYC3&platform=Ubuntu%20Linux%2018.04&status=active"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-328",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 65 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/65/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-332",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 115 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/115/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-333",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 125 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/125/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-334",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 78 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/78/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-335",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 122 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/122/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-336",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 104 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/104/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-337",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 86 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/86/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-338",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 92 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/92/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-339",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 111 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/111/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-340",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 80 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/80/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-341",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 61 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/61/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-315",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "task": "Create a new virtual machine named 'vm-db-103' on the cluster 'DO-AMS3', with platform 'Ubuntu Linux 20.04', status 'active', and description 'New database VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-db-103",
+          "cluster": "DO-AMS3",
+          "platform": "Ubuntu Linux 20.04",
+          "status": "active",
+          "description": "New database VM"
+        }
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-343",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 77 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/77/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-344",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 81 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/81/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-345",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 76 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/76/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-346",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 58 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/58/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-347",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 116 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/116/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-348",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 67 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/67/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-349",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 107 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/107/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-350",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 79 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/79/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-351",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 28 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/28/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-352",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 106 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/106/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-353",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 89 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/89/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-354",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 127 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/127/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-355",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 110 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/110/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-356",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 66 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/66/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-357",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 62 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/62/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-358",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 90 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/90/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-359",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 64 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/64/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-360",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 63 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/63/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-361",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 105 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/105/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-362",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 85 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/85/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-363",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 82 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/82/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-364",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 68 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/68/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-365",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 119 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/119/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-366",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 126 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/126/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-367",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 91 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/91/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-368",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 123 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/123/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-369",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 114 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/114/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-370",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 113 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/113/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-371",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 69 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/69/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-372",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 120 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/120/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-373",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 72 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/72/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-374",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 112 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/112/"
+      }
+    ]
+  },
+  {
+    "id": "CRUD2-375",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "task": "Delete cable ID 75 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/75/"
+      }
+    ]
+  },
+  {
+    "id": "GT2-123",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Show me all cables, their status is connected and of type 'cat5e'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?type=cat5e&status=connected"
+      }
+    ]
+  },
+  {
+    "id": "GT2-124",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Show me all cables, their status is decommissioning and of type 'mmf'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?type=mmf&status=decommissioning"
+      }
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "/api/circuits/circuit-group-assignments/": {
+    "member_type": {
+      "circuits.circuit": "/api/circuits/circuits/",
+      "circuits.virtualcircuit": "/api/circuits/virtual-circuits/"
+    }
+  },
+  "/api/ipam/ip-addresses/": {
+    "assigned_object_type": {
+      "dcim.interface": "/api/dcim/interfaces/",
+      "ipam.fhrpgroup": "/api/ipam/fhrp-groups/",
+      "virtualization.vminterface": "/api/virtualization/interfaces/"
+    }
+  },
+  "/api/dcim/mac-addresses/": {
+    "assigned_object_type": {
+      "dcim.interface": "/api/dcim/interfaces/",
+      "virtualization.vminterface": "/api/virtualization/interfaces/"
+    }
+  },
+  "/api/vpn/l2vpn-terminations/": {
+    "assigned_object_type": {
+      "dcim.interface": "/api/dcim/interfaces/",
+      "ipam.vlan": "/api/ipam/vlans/",
+      "virtualization.vminterface": "/api/virtualization/interfaces/"
+    }
+  },
+  "/api/ipam/prefixes/": {
+    "scope_type": {
+      "dcim.region": "/api/dcim/regions/",
+      "dcim.sitegroup": "/api/dcim/site-groups/",
+      "dcim.site": "/api/dcim/sites/",
+      "dcim.location": "/api/dcim/locations/"
+    }
+  },
+  "/api/virtualization/clusters/": {
+    "scope_type": {
+      "dcim.region": "/api/dcim/regions/",
+      "dcim.sitegroup": "/api/dcim/site-groups/",
+      "dcim.site": "/api/dcim/sites/",
+      "dcim.location": "/api/dcim/locations/"
+    }
+  },
+  "/api/wireless/wireless-lans/": {
+    "scope_type": {
+      "dcim.region": "/api/dcim/regions/",
+      "dcim.sitegroup": "/api/dcim/site-groups/",
+      "dcim.site": "/api/dcim/sites/",
+      "dcim.location": "/api/dcim/locations/"
+    }
+  },
+  "/api/ipam/vlan-groups/": {
+    "scope_type": {
+      "dcim.region": "/api/dcim/regions/",
+      "dcim.sitegroup": "/api/dcim/site-groups/",
+      "dcim.site": "/api/dcim/sites/",
+      "dcim.location": "/api/dcim/locations/",
+      "dcim.rackgroup": "/api/dcim/rack-groups/",
+      "dcim.rack": "/api/dcim/racks/",
+      "virtualization.clustergroup": "/api/virtualization/cluster-groups/",
+      "virtualization.cluster": "/api/virtualization/clusters/"
+    }
+  },
+  "/api/vpn/tunnel-terminations/": {
+    "termination_type": {
+      "dcim.interface": "/api/dcim/interfaces/",
+      "virtualization.vminterface": "/api/virtualization/interfaces/"
+    }
+  },
+  "/api/circuits/circuit-terminations/": {
+    "termination_type": {
+      "dcim.region": "/api/dcim/regions/",
+      "dcim.sitegroup": "/api/dcim/site-groups/",
+      "dcim.site": "/api/dcim/sites/",
+      "dcim.location": "/api/dcim/locations/",
+      "circuits.providernetwork": "/api/circuits/provider-networks/"
+    }
+  },
+  "/api/dcim/inventory-item-templates/": {
+    "component_type": {
+      "dcim.consoleporttemplate": "/api/dcim/console-port-templates/",
+      "dcim.consoleserverporttemplate": "/api/dcim/console-server-port-templates/",
+      "dcim.frontporttemplate": "/api/dcim/front-port-templates/",
+      "dcim.interfacetemplate": "/api/dcim/interface-templates/",
+      "dcim.poweroutlettemplate": "/api/dcim/power-outlet-templates/",
+      "dcim.powerporttemplate": "/api/dcim/power-port-templates/",
+      "dcim.rearporttemplate": "/api/dcim/rear-port-templates/"
+    }
+  },
+  "/api/dcim/inventory-items/": {
+    "component_type": {
+      "dcim.consoleport": "/api/dcim/console-ports/",
+      "dcim.consoleserverport": "/api/dcim/console-server-ports/",
+      "dcim.frontport": "/api/dcim/front-ports/",
+      "dcim.interface": "/api/dcim/interfaces/",
+      "dcim.poweroutlet": "/api/dcim/power-outlets/",
+      "dcim.powerport": "/api/dcim/power-ports/",
+      "dcim.rearport": "/api/dcim/rear-ports/"
+    }
+  },
+  "/api/ipam/fhrp-group-assignments/": {
+    "interface_type": {
+      "dcim.interface": "/api/dcim/interfaces/",
+      "virtualization.vminterface": "/api/virtualization/interfaces/"
+    }
+  },
+  "/api/ipam/services/": {
+    "parent_object_type": {
+      "dcim.device": "/api/dcim/devices/",
+      "ipam.fhrpgroup": "/api/ipam/fhrp-groups/",
+      "virtualization.virtualmachine": "/api/virtualization/virtual-machines/"
+    }
+  },
+  "/api/extras/event-rules/": {
+    "action_object_type": {
+      "extras.webhook": "/api/extras/webhooks/",
+      "extras.script": "/api/extras/scripts/",
+      "extras.notificationgroup": "/api/extras/notification-groups/"
+    }
+  },
+  "/api/extras/bookmarks/": {
+    "object_type": "dynamic:/api/core/object-types/?features=bookmarks"
+  }
+}

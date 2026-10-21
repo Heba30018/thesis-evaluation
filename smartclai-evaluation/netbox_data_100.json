@@ -1,0 +1,1778 @@
+[
+  {
+    "id": "GT-041",
+    "category": "dcim.devices",
+    "difficulty": "easy",
+    "question": "Show me all devices, their status is decommissioning.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?status=decommissioning"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-237",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "question": "Create a new circuit with CID 'WV-2026-0021' from the provider 'Level 3', of type 'MPLS', with status 'active', a commit rate of 500000 Kbps, and description 'New MPLS backbone link'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "WV-2026-0021",
+          "provider": "Level 3",
+          "type": "MPLS",
+          "status": "active",
+          "commit_rate": 500000,
+          "description": "New MPLS backbone link"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-034",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Delete the prefix '172.16.0.0/24'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/prefixes/80/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-084",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Delete the prefix '10.112.165.0/24'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/prefixes/44/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-230",
+    "category": "ipam.vlan-groups",
+    "difficulty": "medium",
+    "question": "Delete the VLAN group 'JBB109'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlan-groups/3/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-091",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "Show me all IP addresses, their status is reserved.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=reserved"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-332",
+    "category": "dcim.racks",
+    "difficulty": "hard",
+    "question": "Delete the rack 'Comms closet' at the site 'DM-Scranton'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/9/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-284",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 52 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/52/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-062",
+    "category": "dcim.rack-roles",
+    "difficulty": "easy",
+    "question": "Update the rack role 'Compute': set its description to 'Standard rack usage category'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/rack-roles/2/",
+        "body": {
+          "description": "Standard rack usage category"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-289",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "question": "Create a new virtual machine named 'vm-worker-501' on the cluster 'gc-asia-northeast1', with platform 'Cisco IOS', status 'active', and description 'New workload instance'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-worker-501",
+          "cluster": "gc-asia-northeast1",
+          "platform": "Cisco IOS",
+          "status": "active",
+          "description": "New workload instance"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-309",
+    "category": "ipam.vlans",
+    "difficulty": "hard",
+    "question": "Update the VLAN 'Wireless' (VID 300) at the site 'DM-Akron': set its status to 'active' and its description to 'Reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/27/",
+        "body": {
+          "status": "active",
+          "description": "Reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-098",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Update the circuit '1002843016': set its status to 'active' and its description to 'Reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/24/",
+        "body": {
+          "status": "active",
+          "description": "Reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-056",
+    "category": "dcim.racks",
+    "difficulty": "hard",
+    "question": "Delete the rack 'Comms closet' at the site 'DM-Rochester'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/8/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-350",
+    "category": "ipam.vlans",
+    "difficulty": "hard",
+    "question": "Update the VLAN with VID 200 (named 'Voice') at the site 'DM-Binghamton': set its status to 'deprecated' and its description to 'Scheduled for decommission'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/6/",
+        "body": {
+          "status": "deprecated",
+          "description": "Scheduled for decommission"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-055",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Show me all 'Dark Fiber' circuits from the provider 'CenturyLink'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?provider_id=2&type_id=4"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-031",
+    "category": "dcim.power-feeds",
+    "difficulty": "medium",
+    "question": "Create a new power feed named 'P-3-NEW' on power panel 'Panel 3', with status 'active', and description 'active feed on panel 3'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/power-feeds/",
+        "body": {
+          "name": "P-3-NEW",
+          "power_panel": "Panel 3",
+          "status": "active",
+          "description": "active feed on panel 3"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-312",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "question": "Update the IP address '172.16.0.5/24': set its status to 'active' and its DNS name to 'host-35.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/35/",
+        "body": {
+          "status": "active",
+          "dns_name": "host-35.example.com"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-108",
+    "category": "ipam.ip-addresses",
+    "difficulty": "easy",
+    "question": "Show me all IP addresses, their status is deprecated.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=deprecated"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-137",
+    "category": "tenancy.tenant-groups",
+    "difficulty": "easy",
+    "question": "Create a new tenant group named 'Partners' with slug 'partners' and description 'External partner organizations'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenant-groups/",
+        "body": {
+          "name": "Partners",
+          "slug": "partners",
+          "description": "External partner organizations"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-156",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 54 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/54/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-355",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 3 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/3/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-234",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "question": "Create a new circuit with CID 'WV-2026-0012' from the provider 'Zayo', of type 'Dark Fiber', with status 'active', a commit rate of 500000 Kbps, and description 'New uplink circuit'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "WV-2026-0012",
+          "provider": "Zayo",
+          "type": "Dark Fiber",
+          "status": "active",
+          "commit_rate": 500000,
+          "description": "New uplink circuit"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-155",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "question": "Create a new provider named 'Windstream' with slug 'windstream' and description 'Regional fiber and MPLS provider'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/providers/",
+        "body": {
+          "name": "Windstream",
+          "slug": "windstream",
+          "description": "Regional fiber and MPLS provider"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-094",
+    "category": "ipam.prefixes",
+    "difficulty": "hard",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Voice' that belong to the VRF 'Echo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role_id=2&vrf_id=5&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-011",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 56 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/56/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-296",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "question": "Update the prefix/VLAN role 'Access - Data': set its description to 'Standard network segment role'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/roles/1/",
+        "body": {
+          "description": "Standard network segment role"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-050",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "question": "Delete the cluster 'gc-us-west3'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/virtualization/clusters/12/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-182",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 45 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/45/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-013",
+    "category": "circuits.circuit-types",
+    "difficulty": "easy",
+    "question": "Create a new circuit type named 'Satellite' with slug 'satellite' and description 'Satellite backup connectivity service'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuit-types/",
+        "body": {
+          "name": "Satellite",
+          "slug": "satellite",
+          "description": "Satellite backup connectivity service"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-009",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "question": "Create a new circuit with CID 'WV-2026-0025' from the provider 'Verizon', of type 'MPLS', with status 'active', a commit rate of 400000 Kbps, and description 'New MPLS circuit'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/circuits/circuits/",
+        "body": {
+          "cid": "WV-2026-0025",
+          "provider": "Verizon",
+          "type": "MPLS",
+          "status": "active",
+          "commit_rate": 400000,
+          "description": "New MPLS circuit"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-100",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'gc-us-west1' running the platform 'Ubuntu Linux 20.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster_id=10&platform_id=3&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-039",
+    "category": "dcim.device-types",
+    "difficulty": "hard",
+    "question": "Delete the device type 'EX4200-48T'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/4/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-177",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "question": "Create a new manufacturer named 'Supermicro' with slug 'supermicro' and description 'Server and storage hardware vendor'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/manufacturers/",
+        "body": {
+          "name": "Supermicro",
+          "slug": "supermicro",
+          "description": "Server and storage hardware vendor"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-099",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "question": "Create a new cluster named 'PVE-MIA1' of the type 'DigitalOcean', with status 'active' and description 'Miami edge compute cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-MIA1",
+          "type": "DigitalOcean",
+          "status": "active",
+          "description": "Miami edge compute cluster"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-118",
+    "category": "ipam.prefixes",
+    "difficulty": "hard",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Data' that belong to the VRF 'Alpha'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role_id=1&vrf_id=1&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-102",
+    "category": "ipam.vlans",
+    "difficulty": "hard",
+    "question": "Delete the VLAN with VID 300 (named 'Wireless') at the site 'DM-Yonkers'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/ipam/vlans/39/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-044",
+    "category": "ipam.vlan-groups",
+    "difficulty": "easy",
+    "question": "Create a new VLAN group named 'DC-Core' with slug 'dc-core' and description 'Core data center VLAN pool'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/vlan-groups/",
+        "body": {
+          "name": "DC-Core",
+          "slug": "dc-core",
+          "description": "Core data center VLAN pool"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-343",
+    "category": "dcim.interfaces",
+    "difficulty": "hard",
+    "question": "Update the interface 'GigabitEthernet0/1/1' on the device 'dmi01-akron-rtr01': disable it and set its description to 'Decommissioned port'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/4/",
+        "body": {
+          "enabled": false,
+          "description": "Decommissioned port"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-363",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 10 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/10/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-092",
+    "category": "ipam.vlans",
+    "difficulty": "medium",
+    "question": "Show me all VLANs, their status is active and at the site 'DM-Yonkers' that are not assigned to any VLAN group.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/vlans/?site_id=14&group_id=null&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-146",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "question": "Update the IP address '172.19.0.16/24': set its status to 'active' and its DNS name to 'host-136.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/136/",
+        "body": {
+          "status": "active",
+          "dns_name": "host-136.example.com"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-117",
+    "category": "dcim.devices",
+    "difficulty": "medium",
+    "question": "Show me all devices, their status is active and with the role 'Database Server' at the site 'JBB Branch 115'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site_id=17&role_id=8&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-117",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 33 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/33/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-035",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "question": "Show me all virtual machines, their status is active and on the cluster 'gc-northamerica-northeast1' running the platform 'Ubuntu Linux 20.04'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster_id=17&platform_id=3&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-268",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "question": "Create a new cluster named 'PVE-CHI1' of the type 'KVM', with status 'active' and description 'Chicago on-prem KVM cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-CHI1",
+          "type": "KVM",
+          "status": "active",
+          "description": "Chicago on-prem KVM cluster"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-168",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "question": "Create a new virtual machine named 'vm-cache-402' on the cluster 'DO-AMS3', with platform 'Cisco IOS', status 'active', and description 'New caching VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-cache-402",
+          "cluster": "DO-AMS3",
+          "platform": "Cisco IOS",
+          "status": "active",
+          "description": "New caching VM"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-342",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "question": "Create a new cluster named 'PVE-DAL1' of the type 'VMware', with status 'active' and description 'Dallas VMware cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-DAL1",
+          "type": "VMware",
+          "status": "active",
+          "description": "Dallas VMware cluster"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-014",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "question": "Create a new tenant named 'Oscorp Industries' with slug 'oscorp-industries', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Oscorp Industries",
+          "slug": "oscorp-industries",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-366",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "question": "Delete the cluster 'gc-us-west4'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/virtualization/clusters/13/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-105",
+    "category": "circuits.circuits",
+    "difficulty": "easy",
+    "question": "Show me all circuits, their status is planned.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/circuits/circuits/?status=planned"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-078",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "question": "Update the region 'Illinois': set its description to 'Confirmed region boundary, reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/69/",
+        "body": {
+          "description": "Confirmed region boundary, reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-009",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "question": "Show me all IP addresses, their status is reserved and that belong to the VRF 'Charlie'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/ip-addresses/?status=reserved&vrf_id=3"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-340",
+    "category": "circuits.providers",
+    "difficulty": "medium",
+    "question": "Delete the provider 'Comcast'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/providers/3/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-107",
+    "category": "ipam.prefixes",
+    "difficulty": "medium",
+    "question": "Show me all prefixes, their status is container and that belong to the VRF 'Delta'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=container&vrf_id=4"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-297",
+    "category": "circuits.providers",
+    "difficulty": "easy",
+    "question": "Update the provider 'NTT': set its description to 'Primary transport vendor, reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/providers/6/",
+        "body": {
+          "description": "Primary transport vendor, reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-058",
+    "category": "dcim.interfaces",
+    "difficulty": "medium",
+    "question": "Show me all disabled '1000base-t' interfaces on the device named 'dmi01-nashua-rtr01'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/interfaces/?device_id=6&type=1000base-t&enabled=false"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-053",
+    "category": "ipam.prefixes",
+    "difficulty": "easy",
+    "question": "Show me all prefixes, their status is container.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=container"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-061",
+    "category": "dcim.interfaces",
+    "difficulty": "easy",
+    "question": "Show me all disabled interfaces.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/interfaces/?enabled=false"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-310",
+    "category": "tenancy.tenants",
+    "difficulty": "medium",
+    "question": "Create a new tenant named 'Wayne Enterprises22' with slug 'wayne-enterprises22', in the tenant group 'Customers', with description 'New client account'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/tenancy/tenants/",
+        "body": {
+          "name": "Wayne Enterprises22",
+          "slug": "wayne-enterprises22",
+          "group": "Customers",
+          "description": "New client account"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-181",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "question": "Update the IP address '172.19.0.17/24': set its status to 'active' and its DNS name to 'host-137.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/137/",
+        "body": {
+          "status": "active",
+          "dns_name": "host-137.example.com"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-080",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "question": "Update the manufacturer 'Dell': set its description to 'Verified vendor record, reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/manufacturers/4/",
+        "body": {
+          "description": "Verified vendor record, reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-036",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices, their status is active and with the role 'ToR Switch' manufactured by Opengear at the site 'Butler Communications'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site_id=24&role_id=9&manufacturer_id=8&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-229",
+    "category": "ipam.ip-addresses",
+    "difficulty": "medium",
+    "question": "Update the IP address '192.168.0.3/22': set its status to 'active' and its DNS name to 'host-3.example.com'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/ip-addresses/3/",
+        "body": {
+          "status": "active",
+          "dns_name": "host-3.example.com"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-345",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "question": "Create a new site group named 'Campus Sites' with slug 'campus-sites' and description 'University and campus locations'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/site-groups/",
+        "body": {
+          "name": "Campus Sites",
+          "slug": "campus-sites",
+          "description": "University and campus locations"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-082",
+    "category": "dcim.site-groups",
+    "difficulty": "easy",
+    "question": "Update the site group 'Customer Sites': set its description to 'Reviewed and confirmed for 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/site-groups/1/",
+        "body": {
+          "description": "Reviewed and confirmed for 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-075",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "question": "Show me all virtual machines on the cluster 'DO-SFO3' running the platform 'Cisco IOS'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?cluster_id=3&platform_id=1"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-150",
+    "category": "dcim.regions",
+    "difficulty": "easy",
+    "question": "Update the region 'New Hampshire': set its description to 'Confirmed region boundary, reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/regions/37/",
+        "body": {
+          "description": "Confirmed region boundary, reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-240",
+    "category": "dcim.device-types",
+    "difficulty": "medium",
+    "question": "Delete the device type 'EX9214'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/device-types/3/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-188",
+    "category": "dcim.racks",
+    "difficulty": "hard",
+    "question": "Update the rack 'Comms closet' at the site 'DM-Stamford': set its status to 'active' and its description to 'Audited Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/10/",
+        "body": {
+          "status": "active",
+          "description": "Audited Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-261",
+    "category": "dcim.racks",
+    "difficulty": "hard",
+    "question": "Delete the rack 'Comms closet' at the site 'DM-Buffalo'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/racks/4/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-161",
+    "category": "circuits.providers",
+    "difficulty": "medium",
+    "question": "Delete the provider 'AT&T'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/providers/1/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-046",
+    "category": "ipam.vlans",
+    "difficulty": "hard",
+    "question": "Update the VLAN with VID 201 (named 'Data') at the site 'JBB Branch 109': set its status to 'deprecated' and its description to 'Scheduled for decommission'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/vlans/44/",
+        "body": {
+          "status": "deprecated",
+          "description": "Scheduled for decommission"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-042",
+    "category": "dcim.cables",
+    "difficulty": "medium",
+    "question": "Show me all cables, their status is planned and of type 'dac-active'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?type=dac-active&status=planned"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-059",
+    "category": "virtualization.cluster-types",
+    "difficulty": "easy",
+    "question": "Create a new cluster type named 'VMware vSphere' with slug 'vmware-vsphere' and description 'VMware vSphere hypervisor cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/cluster-types/",
+        "body": {
+          "name": "VMware vSphere",
+          "slug": "vmware-vsphere",
+          "description": "VMware vSphere hypervisor cluster"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-128",
+    "category": "dcim.interfaces",
+    "difficulty": "hard",
+    "question": "Update the interface 'STACK1' on the device 'dmi01-nashua-sw01': disable it and set its description to 'Decommissioned port'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/475/",
+        "body": {
+          "enabled": false,
+          "description": "Decommissioned port"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-089",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 43 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/43/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-192",
+    "category": "dcim.interfaces",
+    "difficulty": "hard",
+    "question": "Update the interface 'Po1' on the device 'dmi01-yonkers-rtr01': disable it and set its description to 'Decommissioned port'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/857/",
+        "body": {
+          "enabled": false,
+          "description": "Decommissioned port"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-183",
+    "category": "virtualization.vms",
+    "difficulty": "medium",
+    "question": "Update the virtual machine 'vm1': set its status to 'active' and its description to 'Reviewed during Q1 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/virtualization/virtual-machines/361/",
+        "body": {
+          "status": "active",
+          "description": "Reviewed during Q1 2026 audit"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-007",
+    "category": "ipam.prefixes",
+    "difficulty": "easy",
+    "question": "Show me all prefixes, their status is deprecated.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?status=deprecated"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-194",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "question": "Delete the site 'DM-NYC'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/1/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-227",
+    "category": "dcim.sites",
+    "difficulty": "hard",
+    "question": "Delete the site 'JBB Branch 115'.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/sites/17/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-038",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "question": "Create a new tag named 'Lambda' with slug 'lambda', color '3f51b5', and description 'Lambda-phase rollout marker'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/extras/tags/",
+        "body": {
+          "name": "Lambda",
+          "slug": "lambda",
+          "color": "3f51b5",
+          "description": "Lambda-phase rollout marker"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-048",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Show me all cables, their status is connected.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/cables/?status=connected"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-062",
+    "category": "ipam.prefixes",
+    "difficulty": "hard",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Voice' that belong to the VRF 'Alpha'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role_id=2&vrf_id=1&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-132",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Create a new device named 'dmi01-nashua-db02' of device type 'AP7901', with role 'Database Server', at the site 'DM-Nashua', status 'active', platform 'Ubuntu Linux 18.04', and description 'New database server for DM-Nashua'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-nashua-db02",
+          "device_type": "AP7901",
+          "role": "Database Server",
+          "site": "DM-Nashua",
+          "status": "active",
+          "platform": "Ubuntu Linux 18.04",
+          "description": "New database server for DM-Nashua"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-011",
+    "category": "virtualization.vms",
+    "difficulty": "easy",
+    "question": "Show me all virtual machines, their status is staged.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/virtualization/virtual-machines/?status=staged"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-306",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Create a new device named 'dmi01-stamford-sw02' of device type 'C9200-48P', with role 'Distribution Switch', at the site 'DM-Stamford', status 'active', platform 'Ubuntu Linux 18.04', and description 'New distribution switch for DM-Stamford'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/devices/",
+        "body": {
+          "name": "dmi01-stamford-sw02",
+          "device_type": "C9200-48P",
+          "role": "Distribution Switch",
+          "site": "DM-Stamford",
+          "status": "active",
+          "platform": "Ubuntu Linux 18.04",
+          "description": "New distribution switch for DM-Stamford"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-096",
+    "category": "virtualization.clusters",
+    "difficulty": "medium",
+    "question": "Create a new cluster named 'PVE-SEA1' of the type 'DigitalOcean', with status 'active' and description 'Seattle edge compute cluster'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/clusters/",
+        "body": {
+          "name": "PVE-SEA1",
+          "type": "DigitalOcean",
+          "status": "active",
+          "description": "Seattle edge compute cluster"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-067",
+    "category": "dcim.manufacturers",
+    "difficulty": "easy",
+    "question": "Create a new manufacturer named 'Mellanox' with slug 'mellanox' and description 'High-performance networking silicon vendor'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/dcim/manufacturers/",
+        "body": {
+          "name": "Mellanox",
+          "slug": "mellanox",
+          "description": "High-performance networking silicon vendor"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-016",
+    "category": "ipam.asns",
+    "difficulty": "medium",
+    "question": "Create a new ASN 65103 in the RIR 'ARIN', with description 'New peering ASN'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/ipam/asns/",
+        "body": {
+          "asn": 65103,
+          "rir": "ARIN",
+          "description": "New peering ASN"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-092",
+    "category": "circuits.circuits",
+    "difficulty": "medium",
+    "question": "Update the circuit '1002841093': set its status to 'active' and its description to 'Reviewed Q1 2026'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/circuits/circuits/21/",
+        "body": {
+          "status": "active",
+          "description": "Reviewed Q1 2026"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-170",
+    "category": "dcim.racks",
+    "difficulty": "medium",
+    "question": "Update the rack 'R103': set its status to 'active' and its description to 'Verified during Q1 2026 audit'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/racks/16/",
+        "body": {
+          "status": "active",
+          "description": "Verified during Q1 2026 audit"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-339",
+    "category": "virtualization.vms",
+    "difficulty": "hard",
+    "question": "Create a new virtual machine named 'vm-queue-801' on the cluster 'DO-BLR1', with platform 'Ubuntu Linux 18.04', status 'active', and description 'New message queue VM'.",
+    "expected_answer": [
+      {
+        "method": "POST",
+        "expected_endpoint": "/api/virtualization/virtual-machines/",
+        "body": {
+          "name": "vm-queue-801",
+          "cluster": "DO-BLR1",
+          "platform": "Ubuntu Linux 18.04",
+          "status": "active",
+          "description": "New message queue VM"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-093",
+    "category": "dcim.cables",
+    "difficulty": "easy",
+    "question": "Delete cable ID 6 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/6/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-242",
+    "category": "dcim.cables",
+    "difficulty": "hard",
+    "question": "Delete cable ID 87 connecting two terminations.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/dcim/cables/87/"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-119",
+    "category": "ipam.roles",
+    "difficulty": "easy",
+    "question": "Update the prefix/VLAN role 'Access - Voice': set its description to 'Standard network segment role'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/ipam/roles/2/",
+        "body": {
+          "description": "Standard network segment role"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-112",
+    "category": "dcim.devices",
+    "difficulty": "hard",
+    "question": "Show me all devices, their status is active and with the role 'Distribution Switch' manufactured by APC at the site 'JBB Branch 115'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/dcim/devices/?site_id=17&role_id=3&manufacturer_id=11&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-138",
+    "category": "extras.tags",
+    "difficulty": "easy",
+    "question": "Update the tag 'Papa': set its description to 'Reviewed and retained for 2026 rollout'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/extras/tags/16/",
+        "body": {
+          "description": "Reviewed and retained for 2026 rollout"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-287",
+    "category": "dcim.interfaces",
+    "difficulty": "hard",
+    "question": "Update the interface 'xe-0/0/42' on the device 'ncsu118-distswitch1': disable it and set its description to 'Decommissioned port'.",
+    "expected_answer": [
+      {
+        "method": "PATCH",
+        "expected_endpoint": "/api/dcim/interfaces/1011/",
+        "body": {
+          "enabled": false,
+          "description": "Decommissioned port"
+        }
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "GT-064",
+    "category": "ipam.prefixes",
+    "difficulty": "hard",
+    "question": "Show me all prefixes, their status is active and with the role 'Access - Data' that belong to the VRF 'Bravo'.",
+    "expected_answer": [
+      {
+        "method": "GET",
+        "expected_endpoint": "/api/ipam/prefixes/?role_id=1&vrf_id=2&status=active"
+      }
+    ],
+    "netbox_submited": true
+  },
+  {
+    "id": "CRUD-519",
+    "category": "circuits.circuits",
+    "difficulty": "hard",
+    "task": "Circuit KKDG4923 got terminated by the carrier last week, so it needs to come out of NetBox.",
+    "expected_answer": [
+      {
+        "method": "DELETE",
+        "expected_endpoint": "/api/circuits/circuits/1/"
+      }
+    ],
+    "netbox_submited": false
+  },
+
+    {
+      "id": "FAIL-GET-001",
+      "category": "dcim.devices",
+      "difficulty": "medium",
+      "task": "Show me all devices, their status is discontinued.",
+      "expected_answer": [
+        {
+          "method": "GET",
+          "expected_endpoint": "/api/dcim/devices/?status=discontinued"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "The agent's translation is correct (this is exactly how every other 'status is X' GET example in the dataset is built), but 'discontinued' is not a valid Device status choice in NetBox (valid choices: offline, active, planned, staged, failed, inventory, decommissioning). Submitting this filter to a real NetBox instance returns 400 Bad Request ('Select a valid choice')."
+    },
+    {
+      "id": "FAIL-GET-002",
+      "category": "ipam.vlans",
+      "difficulty": "medium",
+      "task": "Show me all VLANs, their status is provisioning.",
+      "expected_answer": [
+        {
+          "method": "GET",
+          "expected_endpoint": "/api/ipam/vlans/?status=provisioning"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "'provisioning' is not a valid VLAN status choice (valid choices: active, reserved, deprecated). Real NetBox rejects the filter with 400."
+    },
+    {
+      "id": "FAIL-GET-003",
+      "category": "ipam.prefixes",
+      "difficulty": "medium",
+      "task": "Show me all prefixes, their status is retired.",
+      "expected_answer": [
+        {
+          "method": "GET",
+          "expected_endpoint": "/api/ipam/prefixes/?status=retired"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "'retired' is not a valid Prefix status choice (valid choices: container, active, reserved, deprecated). Real NetBox rejects the filter with 400."
+    },
+    {
+      "id": "FAIL-GET-004",
+      "category": "circuits.circuits",
+      "difficulty": "medium",
+      "task": "Show me all circuits, their status is cancelled.",
+      "expected_answer": [
+        {
+          "method": "GET",
+          "expected_endpoint": "/api/circuits/circuits/?status=cancelled"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "'cancelled' is not a valid Circuit status choice (valid choices: planned, provisioning, active, offline, deprovisioning, decommissioned). Real NetBox rejects the filter with 400."
+    },
+    {
+      "id": "FAIL-GET-005",
+      "category": "virtualization.vms",
+      "difficulty": "medium",
+      "task": "Show me all virtual machines, their status is terminated.",
+      "expected_answer": [
+        {
+          "method": "GET",
+          "expected_endpoint": "/api/virtualization/virtual-machines/?status=terminated"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "'terminated' is not a valid VirtualMachine status choice (valid choices: offline, active, planned, staged, failed, decommissioning). Real NetBox rejects the filter with 400."
+    },
+  
+    {
+      "id": "FAIL-PATCH-001",
+      "category": "ipam.vlans",
+      "difficulty": "hard",
+      "task": "Update the VLAN with VID 200 (named 'Voice') at the site 'DM-Binghamton': set its VID to 5000.",
+      "expected_answer": [
+        {
+          "method": "PATCH",
+          "expected_endpoint": "/api/ipam/vlans/6/",
+          "body": {
+            "vid": 5000
+          }
+        }
+      ],
+      "netbox_submited": false,
+      "note": "This VLAN is real (id 6, same object as CRUD-350). The agent resolves it correctly, but 5000 is outside NetBox's valid VID range (1-4094), so the write is rejected by NetBox with a 400 validation error."
+    },
+    {
+      "id": "FAIL-PATCH-002",
+      "category": "ipam.vlans",
+      "difficulty": "hard",
+      "task": "Update the VLAN with VID 300 (named 'Wireless') at the site 'DM-Akron': set its status to 'provisioning'.",
+      "expected_answer": [
+        {
+          "method": "PATCH",
+          "expected_endpoint": "/api/ipam/vlans/27/",
+          "body": {
+            "status": "provisioning"
+          }
+        }
+      ],
+      "netbox_submited": false,
+      "note": "This VLAN is real (id 27, same object as CRUD-309). 'provisioning' is not a valid VLAN status choice, so NetBox rejects the write with 400."
+    },
+    {
+      "id": "FAIL-PATCH-003",
+      "category": "ipam.vlans",
+      "difficulty": "hard",
+      "task": "Update the VLAN with VID 201 (named 'Data') at the site 'JBB Branch 109': set its VID to 0.",
+      "expected_answer": [
+        {
+          "method": "PATCH",
+          "expected_endpoint": "/api/ipam/vlans/44/",
+          "body": {
+            "vid": 0
+          }
+        }
+      ],
+      "netbox_submited": false,
+      "note": "This VLAN is real (id 44, same object as CRUD-046). VID 0 is below NetBox's minimum valid VID (1), so the write is rejected with 400."
+    },
+    {
+      "id": "FAIL-PATCH-004",
+      "category": "ipam.ip-addresses",
+      "difficulty": "hard",
+      "task": "Update the IP address '172.16.0.5/24': set its status to 'expired'.",
+      "expected_answer": [
+        {
+          "method": "PATCH",
+          "expected_endpoint": "/api/ipam/ip-addresses/35/",
+          "body": {
+            "status": "expired"
+          }
+        }
+      ],
+      "netbox_submited": false,
+      "note": "This IP address is real (id 35, same object as CRUD-312). 'expired' is not a valid IPAddress status choice (valid choices: active, reserved, deprecated, dhcp, slaac). NetBox rejects the write with 400."
+    },
+    {
+      "id": "FAIL-PATCH-005",
+      "category": "circuits.circuits",
+      "difficulty": "hard",
+      "task": "Update the circuit '1002843016': set its status to 'cancelled'.",
+      "expected_answer": [
+        {
+          "method": "PATCH",
+          "expected_endpoint": "/api/circuits/circuits/24/",
+          "body": {
+            "status": "cancelled"
+          }
+        }
+      ],
+      "netbox_submited": false,
+      "note": "This circuit is real (id 24, same object as CRUD-098). 'cancelled' is not a valid Circuit status choice. NetBox rejects the write with 400."
+    },
+  
+    {
+      "id": "FAIL-DELETE-001",
+      "category": "circuits.circuit-types",
+      "difficulty": "hard",
+      "task": "Delete the circuit type 'MPLS'.",
+      "expected_answer": [
+        {
+          "method": "DELETE",
+          "expected_endpoint": "/api/circuits/circuit-types/2/"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "Real, existing circuit type (id 2). Circuit.type is a required field, so NetBox PROTECTs this row while any circuit still references it (multiple MPLS circuits exist in this dataset, e.g. CRUD-237, CRUD-009). The delete is correctly resolved and addressed, but NetBox itself rejects it with 409/400 ('Unable to delete circuit type. N dependent circuits were found')."
+    },
+    {
+      "id": "FAIL-DELETE-002",
+      "category": "virtualization.cluster-types",
+      "difficulty": "hard",
+      "task": "Delete the cluster type 'KVM'.",
+      "expected_answer": [
+        {
+          "method": "DELETE",
+          "expected_endpoint": "/api/virtualization/cluster-types/6/"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "Real, existing cluster type (id 6). Cluster.type is a required field, so NetBox PROTECTs this row while any cluster still references it (e.g. CRUD-268's cluster 'PVE-CHI1'). Correctly resolved, but rejected by NetBox with a dependent-objects error."
+    },
+    {
+      "id": "FAIL-DELETE-003",
+      "category": "dcim.device-roles",
+      "difficulty": "hard",
+      "task": "Delete the device role 'Distribution Switch'.",
+      "expected_answer": [
+        {
+          "method": "DELETE",
+          "expected_endpoint": "/api/dcim/device-roles/3/"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "Real, existing device role (id 3). Device.role is a required field, so NetBox PROTECTs this row while any device still uses it (many devices in this dataset have role 'Distribution Switch', e.g. CRUD-306). Correctly resolved, but rejected by NetBox with a dependent-objects error."
+    },
+    {
+      "id": "FAIL-DELETE-004",
+      "category": "dcim.sites",
+      "difficulty": "hard",
+      "task": "Delete the site 'DM-Akron'.",
+      "expected_answer": [
+        {
+          "method": "DELETE",
+          "expected_endpoint": "/api/dcim/sites/2/"
+        }
+      ],
+      "netbox_submited": false,
+      "note": "Real, existing site (id 2). Device.site is a required field, and the real device 'dmi01-akron-rtr01' is located there (see CRUD-343). NetBox PROTECTs sites with dependent devices/racks, so this delete is correctly resolved but rejected."
+    }
+  ]
+  
+
